@@ -1,0 +1,5 @@
+Os episódios usam os links registrados em database/data.php. A aplicação extrai o ID do YouTube e monta o player sem mostrar a URL na interface.
+
+Importante: incorporar um vídeo não significa hospedar o arquivo no servidor WWAnalog. Se um vídeo bloquear incorporação, estiver privado/removido ou tiver restrições regionais, o player não conseguirá reproduzi-lo. Para hospedagem própria, é necessário ter o arquivo de vídeo e autorização para armazená-lo e distribuí-lo.
+
+Esta atualização remove listas de URLs que haviam vazado para o campo de tag, preserva os registros dos episódios e não altera o PostgreSQL.

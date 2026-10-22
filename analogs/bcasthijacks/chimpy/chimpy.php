@@ -1,5 +1,4 @@
 <?php
-/* WWAnalog — Página informativa da obra analógica chimpy; apresenta sua descrição, dados registrados e episódios relacionados. */
 $pageTitle = "C. Chippa's Commercial";
 require_once __DIR__ . '/../../../includes/header.php';
 ?>

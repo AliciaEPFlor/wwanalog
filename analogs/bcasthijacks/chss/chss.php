@@ -1,5 +1,4 @@
 <?php
-/* WWAnalog — Página informativa da obra analógica chss; apresenta sua descrição, dados registrados e episódios relacionados. */
 $pageTitle = 'CH/SS';
 require_once __DIR__ . '/../../../includes/header.php';
 ?>

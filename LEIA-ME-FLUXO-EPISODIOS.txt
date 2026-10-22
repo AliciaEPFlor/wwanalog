@@ -1,0 +1,9 @@
+Fluxo de navegação de episódios WWAnalog
+
+1. Os cards do catálogo não exibem URLs de vídeo.
+2. A página individual da obra apresenta as informações e o botão “Clique aqui para assistir!”.
+3. A lista de episódios apresenta número e título como links internos, sem mostrar URLs de origem.
+4. A página do episódio exibe o player incorporado quando a plataforma permite incorporação e oferece comentários abaixo.
+5. As URLs originais são usadas internamente para montar o player; não são impressas como texto nem como link visível.
+
+Observação: URLs do YouTube são convertidas para player incorporado. Outros provedores exigem suporte específico ao embed ou uma hospedagem autorizada.

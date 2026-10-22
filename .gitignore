@@ -7,6 +7,3 @@
 database/config.local.php
 
 *.log
-
-# Chaves privadas do assistente Gemini
-config/ai.local.php

@@ -1,0 +1,10 @@
+WWAnalog — configuração dos caminhos
+
+Os links internos, redirecionamentos e caminhos de CSS/imagens usam a função url() e a variável de ambiente WWANALOG_BASE_URL.
+
+1. Se os arquivos estiverem diretamente na raiz pública do site (por exemplo, https://exemplo.com/), deixe WWANALOG_BASE_URL vazio ou não definido.
+2. Se o projeto estiver em uma subpasta (por exemplo, https://exemplo.com/wwanalog/), configure WWANALOG_BASE_URL=/wwanalog no ambiente do PHP/servidor. Não coloque uma barra final.
+3. Includes PHP usam __DIR__ para apontar aos arquivos locais do projeto; não altere esses caminhos para URLs.
+4. A configuração e a senha do PostgreSQL não foram incluídas nem modificadas.
+
+Observação: os links para sites externos e os links de vídeo externos permanecem externos intencionalmente.

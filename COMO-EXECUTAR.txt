@@ -1,0 +1,3 @@
+WWAnalog sem Docker
+
+Abra esta pasta no VS Code. Configure database/config.local.php a partir do exemplo, preencha a senha localmente e execute com seu servidor PHP. Consulte README.md para os passos completos.

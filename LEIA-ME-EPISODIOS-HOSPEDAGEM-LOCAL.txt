@@ -1,0 +1,7 @@
+WWAnalog — Episódios hospedados na aplicação
+
+Os episódios agora podem usar arquivos de vídeo armazenados no próprio projeto, em media/episodes/<slug-da-obra>/. O painel do desenvolvedor (Gerenciar episódios) aceita MP4, WEBM, OGV e M4V até 512 MB por arquivo. A lista de episódios aponta para a página interna episodio.php; se houver arquivo local cadastrado, o player HTML5 usa esse arquivo prioritariamente.
+
+IMPORTANTE: esta atualização prepara a estrutura e o fluxo de upload; não inclui cópias de vídeos de terceiros. Para cada episódio, um administrador precisa enviar um arquivo que tenha direito/autorização para hospedar. Episódios antigos que só têm URL externa continuam sem arquivo local até o vídeo autorizado ser enviado.
+
+No servidor, verifique upload_max_filesize e post_max_size no PHP (ambos devem ser maiores que o arquivo enviado), além de permissões de escrita para media/episodes. Exemplo recomendado: upload_max_filesize=512M e post_max_size=520M. A hospedagem de vídeo pode consumir bastante disco e banda.

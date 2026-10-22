@@ -1,0 +1,10 @@
+WWAnalog — caminhos completos
+
+A função url() em includes/functions.php agora gera URLs absolutas para os links internos, folhas de estilo, imagens, páginas de episódio e painel administrativo.
+
+Exemplo local:
+http://127.0.0.1:8001/episodio.php?obra=6&ep=1
+
+A URL base é detectada automaticamente a partir do endereço e da pasta publicada pelo servidor. Se o site estiver numa subpasta ou domínio específico, configure WWANALOG_BASE_URL. A variável aceita tanto uma URL completa (por exemplo, https://exemplo.com/wwanalog) quanto um caminho-base (por exemplo, /wwanalog).
+
+Observação: links externos de plataformas de vídeo continuam externos por natureza. Os caminhos internos da aplicação são montados pela função url().

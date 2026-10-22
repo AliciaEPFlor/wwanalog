@@ -1,5 +1,4 @@
 <?php
-/* WWAnalog — Página de diagnóstico da conexão PostgreSQL; usar apenas em ambiente protegido. */
 require_once __DIR__ . '/../includes/config.php';
 
 header('Content-Type: text/html; charset=UTF-8');

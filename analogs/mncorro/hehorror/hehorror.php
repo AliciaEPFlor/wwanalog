@@ -1,5 +1,4 @@
 <?php
-/* WWAnalog — Página informativa da obra analógica hehorror; apresenta sua descrição, dados registrados e episódios relacionados. */
 $pageTitle = 'HeHorror';
 require_once __DIR__ . '/../../../includes/header.php';
 ?>

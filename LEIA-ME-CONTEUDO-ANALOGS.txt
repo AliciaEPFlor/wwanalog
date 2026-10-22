@@ -1,0 +1,3 @@
+WWAnalog — sinopses, histórias, episódios e comentários
+
+Os cards usam a sinopse do documento quando fornecida. As páginas individuais mostram sinopse e enredo quando disponíveis. Os episódios listados no documento foram cadastrados com título e URL original; links YouTube geram URL de incorporação e também mantêm o link de origem. Comentários são exibidos na página do episódio e exigem autenticação no fluxo atual. Campos ausentes no documento não foram inventados. Não há alteração nem recriação do banco PostgreSQL. O catálogo desta versão ainda usa database/data.php; a integração completa ao PostgreSQL é uma etapa separada.

@@ -1,0 +1,6 @@
+Correções realizadas:
+- Corrigido o aviso de episodios.php quando visitante não autenticado: agora o registro de visualização usa ID 0 quando não há usuário conectado.
+- Limpeza de tags que estavam contendo links e textos de episódios indevidamente.
+- Normalização de classificações existentes: TV-MA/MA para 18+, TV-14 para 14+, TV-PG para 10+; classificações não reconhecidas ou campos contaminados passam a aparecer como "Não informada" em vez de uma idade presumida.
+- Cards não usam mais 14+ como classificação padrão quando a informação está ausente.
+- Não foi alterado nem recriado o PostgreSQL; os dados deste pacote continuam em database/data.php.

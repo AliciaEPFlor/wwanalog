@@ -2,10 +2,10 @@
 
 ## Configuração incluída
 
-- Host: `192.168.10.11` (ou o endereço do seu servidor)
+- Host: `192.168.10.11`
 - Porta: `5432`
 - Banco existente: `wwanalog`
-- Usuário: `wwadmin` (ou o usuário PostgreSQL que você criou)
+- Usuário: `postgres`
 - Driver PDO: `pgsql` (`pdo_pgsql` precisa estar habilitado no PHP)
 
 ## Preparar a senha localmente
@@ -21,7 +21,7 @@ Como alternativa, configure a variável de ambiente `WWANALOG_DB_PASSWORD` no am
 
 Com o servidor PHP iniciado na pasta raiz do projeto, abra:
 
-`http://192.168.10.11:8001/database/teste_conexao.php`
+`http://localhost:8001/database/teste_conexao.php`
 
 Troque a porta da URL se seu servidor usar outra. O teste executa somente `SELECT current_database(), current_user, version()`; não cria, apaga ou altera tabelas. Depois de testar, remova `database/teste_conexao.php`.
 
