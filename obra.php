@@ -1,0 +1,178 @@
+<?php
+/* WWAnalog — Detalhes de uma obra: apresenta metadados, avaliações, comentários e listas. */
+require_once __DIR__ . '/includes/functions.php';
+$w = find_work($_GET['id'] ?? '');
+if (!$w) {
+    http_response_code(404);
+    exit('Obra não encontrada.');
+}
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && !logged()) {
+    header('Location: ' . url('login/login.php'));
+    exit;
+}
+$active = 'catalog';
+$page_title = $w['title'];
+$vd = data_read();
+$vd['views'][] = ['type' => 'work', 'work_id' => (int)$w['id'], 'user_id' => (int)(user()['id'] ?? 0), 'at' => date('c')];
+data_write($vd);
+require __DIR__ . '/includes/header.php';
+check_csrf();
+$msg = '';
+$err = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    require_login();
+    $d = data_read();
+    $uid = (int)user()['id'];
+    if (isset($_POST['list_status'])) {
+        $status = $_POST['list_status'];
+        $allowed = ['Adicionado à lista', 'Assistindo', 'Assistido'];
+        if (in_array($status, $allowed, true)) {
+            $found = false;
+            foreach ($d['lists'] as &$l) {
+                if ((int)($l['user'] ?? 0) === $uid && (int)($l['work'] ?? 0) === (int)$w['id']) {
+                    $l['status'] = $status;
+                    $found = true;
+                    break;
+                }
+            }
+            unset($l);
+            if (!$found) $d['lists'][] = ['user' => $uid, 'work' => (int)$w['id'], 'status' => $status, 'updated_at' => date('c')];
+            data_write($d);
+            audit_event('lista_atualizada', $w['title'] . ' — ' . $status);
+            $msg = 'Sua lista foi atualizada.';
+        }
+    } elseif (isset($_POST['stars'])) {
+        $stars = (int)$_POST['stars'];
+        if ($stars >= 1 && $stars <= 5) {
+            $found = false;
+            foreach ($d['ratings'] as &$r) {
+                if ((int)($r['user_id'] ?? 0) === $uid && (int)($r['work_id'] ?? 0) === (int)$w['id'] && !isset($r['episode_index'])) {
+                    $r['stars'] = $stars;
+                    $r['updated_at'] = date('c');
+                    $found = true;
+                    break;
+                }
+            }
+            unset($r);
+            if (!$found) $d['ratings'][] = ['user_id' => $uid, 'work_id' => (int)$w['id'], 'stars' => $stars, 'created_at' => date('c')];
+            data_write($d);
+            $msg = 'Sua avaliação foi salva.';
+        }
+    } elseif (isset($_POST['comment'])) {
+        $body = trim($_POST['comment']);
+        if ($body === '') $err = 'Escreva um comentário antes de enviar.';
+        elseif (mb_strlen($body) > 2000) $err = 'O comentário deve ter no máximo 2.000 caracteres.';
+        else {
+            $d['comments'][] = ['id' => max(array_column($d['comments'], 'id') ?: [0]) + 1, 'user_id' => $uid, 'user_name' => user()['nickname'] ?: user()['name'], 'work_id' => (int)$w['id'], 'body' => $body, 'status' => 'published', 'created_at' => date('c')];
+            data_write($d);
+            audit_event('comentario_criado', $w['title']);
+            $msg = 'Comentário publicado.';
+        }
+    }
+}
+$d = data_read();
+$avg = work_rating_average($w['id']);
+$comments = logged() ? work_comments($w['id']) : [];
+$myStars = 0;
+foreach ($d['ratings'] as $r) if ((int)($r['user_id'] ?? 0) === (int)(user()['id'] ?? 0) && (int)($r['work_id'] ?? 0) === (int)$w['id'] && !isset($r['episode_index'])) $myStars = (int)$r['stars'];
+$img = $w['image'] ?? '';
+$episodes = $w['episodes'] ?? [];
+ob_start(); ?>
+<div class="breadcrumbs">
+    <a href="<?= e(url('catalogo.php')) ?>">Catálogo</a> / <?= e($w['title']) ?>
+</div>
+<?php if (isset($_GET['cadastro'])): ?>
+    <div class="notice success">Cadastro concluído! Você já está conectado.</div>
+<?php endif; ?>
+<div class="detail-head">
+    <div class="cover detail-cover <?= e(cover_class($w)) ?>">
+        <?php if ($img): ?><img src="<?= e(preg_match('~^https?://~i', $img) ? $img : url($img)) ?>" alt="Capa de <?= e($w['title']) ?>" style="width:100%;height:100%;object-fit:cover"><?php else: ?>ARQUIVO / SEM CAPA<?php endif; ?>
+        </div>
+    <div class="detail">
+        <div class="eyebrow">REGISTRO #<?= str_pad((string)$w['id'], 4, '0', STR_PAD_LEFT) ?></div>
+        <h1><?= e($w['title']) ?></h1>
+        <div class="detail-meta">
+            <span class="tag"><?= e($w['tag'] ?? 'Analog Horror') ?></span>
+            <span class="tag"><?= e(category_name($w['category'])) ?></span>
+            <?php if (!empty($w['status'])): ?>
+                <span class="tag"><?= e($w['status']) ?>
+            </span>
+            <?php endif; ?>
+        </div>
+        <p class="desc"><?= e($w['description'] ?: 'Sinopse ainda não cadastrada.') ?></p>
+        <?php if (!empty($w['synopsis'])): ?>
+            <h3>Sinopse completa</h3>
+            <p><?= nl2br(e($w['synopsis'])) ?></p>
+            <?php endif; ?><?php if (!empty($w['story'])): ?>
+                <h3>História da obra</h3>
+            <p><?= nl2br(e($w['story'])) ?></p>
+            <?php endif; ?>
+            <?php if (!empty($w['warning'])): ?>
+                <div class="notice">⚠ <strong>Aviso de conteúdo:</strong> <?= e($w['warning']) ?></div>
+                <?php endif; ?>
+                <div class="panel" style="margin-top:16px;padding:14px">
+            <div class="kv"><b>Título original</b>
+            <span><?= e($w['original_title'] ?? $w['title']) ?></span>
+        </div>
+            <div class="kv"><b>Criador</b>
+            <span><?= e($w['creator'] ?: 'Não cadastrado') ?></span>
+        </div>
+            <div class="kv">
+                <b>Canal do criador</b>
+                <span><?= e($w['creator'] ?: 'Não informado') ?></span>
+            </div>
+            <div class="kv"><b>Ano</b>
+            <span><?= e($w['year'] ?: 'Não cadastrado') ?></span>
+        </div>
+            <div class="kv">
+                <b>Episódios cadastrados</b>
+                <span><?= count($episodes) ?></span>
+            </div>
+            <div class="kv"><b>Situação</b><span>
+                <?= e($w['status'] ?: 'Não cadastrada') ?>
+            </span>
+        </div>
+            <div class="kv"><b>Classificação indicativa</b>
+            <span><?= e($w['rating'] ?? 'Não informada') ?></span>
+        </div>
+    </div>
+        <div class="hero-actions"><a class="btn" href="<?= logged() ? '/episodios.php?obra=' . (int)$w['id'] : '/login/login.php?return=' . urlencode('/episodios.php?obra=' . (int)$w['id']) ?>">Clique aqui para assistir!</a><?php if (!logged()): ?>
+            <span class="small muted">É necessário entrar ou criar uma conta para assistir e interagir.</span>
+            <?php endif; ?>
+        </div>
+    </div>
+</div>
+<?php if ($msg): ?><div class="notice success"><?= e($msg) ?></div><?php endif; ?><?php if ($err): ?>
+    <div class="notice"><?= e($err) ?></div>
+    <?php endif; ?>
+<section class="panel" style="margin-top:24px">
+    <div class="section-head">
+        <div>
+            <h2>Comentários sobre a obra</h2>
+            <small>Área exclusiva para usuários autenticados</small>
+        </div>
+    </div>
+    <?php if (!logged()): ?>
+        <p>Entre ou crie uma conta para ler e publicar comentários desta obra.</p><a class="btn" href="<?= e(url('login/login.php')) ?>">Entrar</a>
+        <?php else: ?>
+            <form method="post">
+                <input type="hidden" name="csrf" value="<?= csrf() ?>">
+                <label for="comment">Seu comentário</label>
+                <textarea class="textarea" id="comment" name="comment" maxlength="2000" rows="4" required></textarea>
+                <button class="btn" style="margin-top:10px">Publicar comentário</button></form>
+        <div class="comment-list" style="margin-top:18px">
+            <?php if ($comments): foreach ($comments as $c): ?><article class="comment">
+                        <div class="eyebrow"><?= e($c['user_name'] ?? 'Usuário') ?> · <?= e(date('d/m/Y', strtotime($c['created_at'] ?? 'now'))) ?>
+                    </div>
+                        <p><?= nl2br(e($c['body'] ?? '')) ?></p>
+                    </article>
+        <?php endforeach;
+        else: ?>
+        <div class="empty">Nenhum comentário publicado ainda.</div>
+        <?php endif; ?>
+        </div>
+        <?php endif; ?>
+</section>
+<?php $content = ob_get_clean();
+shell($content, $active);
+require __DIR__ . '/includes/footer.php'; ?>

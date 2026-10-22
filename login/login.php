@@ -1,0 +1,25 @@
+<?php
+/* WWAnalog — Autentica o usuário, valida a senha e inicia uma sessão segura. */ require_once __DIR__ . '/../includes/functions.php';
+$page_title = 'Login';
+require __DIR__ . '/../includes/header.php';
+check_csrf();
+$err = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    foreach (data_read()['users'] as $u) {
+        if (strtolower($u['email']) === strtolower(trim($_POST['email'] ?? '')) && password_verify($_POST['senha'] ?? '', $u['password'])) {
+            session_regenerate_id(true);
+            $_SESSION['user'] = $u;
+            audit_event('login', 'Login realizado');
+            header('Location: ' . url('index.php'));
+            exit;
+        }
+    }
+    $err = 'E-mail ou senha inválidos.';
+}
+ob_start(); ?><div class="formbox">
+    <div class="eyebrow">ACESSO AO ARQUIVO</div>
+    <h1>Login</h1><?php if ($err): ?><div class="notice"><?= e($err) ?></div><?php endif; ?><form method="post"><input type="hidden" name="csrf" value="<?= csrf() ?>"><label>E-mail</label><input class="input" type="email" name="email" required><label>Senha</label><input class="input" type="password" name="senha" required><button class="btn">Entrar</button></form>
+    <p class="small muted">Ainda não possui conta? <a href="<?= e(url('login/cadastro.php')) ?>">Criar cadastro</a></p>
+</div><?php $content = ob_get_clean();
+        shell($content);
+        require __DIR__ . '/../includes/footer.php'; ?>

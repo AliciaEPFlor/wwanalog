@@ -1,0 +1,58 @@
+<?php
+/* WWAnalog — Página explicativa sobre o gênero Analog Horror e a organização do catálogo. */ $page_title = 'O que é';
+$active = 'info';
+require __DIR__ . '/includes/header.php';
+$d = data_read();
+$descs = [
+    'foundfootage' => 'A narrativa se apresenta como material encontrado: fitas, gravações de câmera, arquivos recuperados ou vídeos publicados depois de algum acontecimento. O horror nasce da sensação de que o espectador está vendo uma evidência que não deveria existir.',
+    'bcasthijacks' => 'A história é contada por meio de televisão, rádio, canais locais, alertas e transmissões interrompidas ou alteradas. A quebra da programação normal transforma uma mídia familiar em um sinal de ameaça.',
+    'cttpsas' => 'Utiliza vídeos de treinamento, fitas educativas, anúncios públicos, instruções de segurança e comunicações institucionais. A linguagem objetiva desses materiais contrasta com informações anômalas, perigosas ou perturbadoras.',
+    'lostmedia' => 'Explora a ideia de uma obra, gravação, jogo ou programa que desapareceu, foi apagado, ficou incompleto ou voltou a ser encontrado. O próprio processo de procurar a mídia passa a fazer parte do mistério.',
+    'args' => 'ARGs distribuem pistas e acontecimentos por diferentes mídias, páginas, vídeos, documentos ou mensagens. O público participa ativamente da investigação, conectando fragmentos para reconstruir a narrativa ficcional.',
+    'liminalsp' => 'Usa espaços vazios, repetitivos, enormes ou deslocados de sua função cotidiana para produzir estranheza. Corredores, estacionamentos, shoppings, prédios e ambientes aparentemente comuns podem se tornar ameaçadores quando não há pessoas, saída ou lógica aparente.',
+    'mncorro' => 'Trabalha com lembranças, programas infantis, comerciais, músicas e referências nostálgicas que são gradualmente deformadas. O familiar continua reconhecível, mas passa a carregar sinais de perigo, perda ou algo que está errado.',
+    'animais' => 'Coloca animais, plantas, florestas, parques ou fenômenos naturais no centro do horror. A ameaça pode surgir de alterações biológicas, criaturas desconhecidas, comportamentos impossíveis ou ambientes naturais que escondem algo.',
+    'jogos' => 'Utiliza jogos, consoles, computadores, softwares, arquivos e mídias interativas como parte da narrativa. Erros, arquivos ocultos, personagens corrompidos e comportamentos impossíveis fazem o próprio sistema parecer estar participando do horror.',
+    'substituicao' => 'Explora cópias, sósias, duplicatas ou entidades que ocupam o lugar de pessoas. A tensão costuma vir da dúvida sobre identidade, memória e confiança: quem está diante do personagem pode não ser quem parece.'
+];
+ob_start(); ?>
+<div class="hero">
+    <div class="eyebrow">DOCUMENTAÇÃO // GÊNERO</div>
+    <h1>Analong Horror</h1>
+    <p>Analog Horror é um subgênero de ficção de terror que imita a linguagem de mídias antigas — como televisão, VHS, fitas educativas, gravações domésticas, rádio e sistemas de emergência — para contar histórias de mistério, ameaça e estranheza. Em vez de depender apenas de sustos, muitas obras usam ruído, baixa fidelidade, mensagens incompletas, silêncios, imagens estranhas e informações fragmentadas para fazer o público investigar o que está acontecendo.</p>
+</div>
+<div class="two-col info-explainer">
+    <section class="panel">
+        <div class="eyebrow">01 // COMO FUNCIONA</div>
+        <h2>O que torna uma obra Analog Horror?</h2>
+        <p>O elemento central é a <strong>linguagem da mídia</strong>. A obra pode parecer um telejornal antigo, uma fita institucional, uma gravação encontrada ou um arquivo digital recuperado. A estética ajuda a construir a sensação de autenticidade, como se aquele material fosse um documento dentro do universo da história.</p>
+        <p>Outro recurso frequente é a <strong>informação incompleta</strong>. Em vez de explicar tudo, a narrativa deixa pistas, contradições e acontecimentos fora de quadro. O espectador precisa montar hipóteses, comparar vídeos e interpretar detalhes.</p>
+        <p>O gênero também costuma trabalhar com <strong>estranheza progressiva</strong>: algo começa normal e pequenas alterações fazem o material parecer cada vez mais errado. A familiaridade da televisão, da publicidade ou de um jogo é usada justamente para tornar a quebra dessa normalidade mais desconfortável.</p>
+    </section>
+    <section class="panel">
+        <div class="eyebrow">02 // RECURSOS</div>
+        <h2>Elementos comuns</h2>
+        <ul class="info-list">
+            <li><strong>Estética analógica:</strong> ruído, VHS, interferência, scanlines e baixa resolução.</li>
+            <li><strong>Transmissões:</strong> canais, alertas, programas e mensagens que são interrompidos ou corrompidos.</li>
+            <li><strong>Fitas e arquivos:</strong> registros recuperados, documentos e gravações que funcionam como evidências.</li>
+            <li><strong>Mensagens enigmáticas:</strong> textos, símbolos, instruções e avisos que escondem informações.</li>
+            <li><strong>Horror psicológico:</strong> medo, paranoia, isolamento e dúvida sobre o que é real.</li>
+            <li><strong>Horror corporal ou cósmico:</strong> quando a ameaça envolve transformação, criaturas ou fenômenos maiores que os personagens.</li>
+        </ul>
+    </section>
+</div>
+<div class="section-head">
+    <div>
+        <h2>Categorias</h2>
+        <small>As categorias são uma forma de organizar diferentes linguagens e temas usados pelo arquivo.</small>
+    </div>
+</div>
+<div class="category-info-grid"><?php foreach ($d['categories'] as $i => $c): ?><article class="card category-info">
+            <div class="category-number">CAT. <?= str_pad($i + 1, 2, '0', STR_PAD_LEFT) ?></div>
+            <h2><?= e($c['name']) ?></h2>
+            <p class="desc"><?= e($descs[$c['slug']] ?? 'Categoria utilizada para organizar obras com características relacionadas a este tipo de narrativa.') ?></p>
+        </article><?php endforeach; ?></div>
+<?php $content = ob_get_clean();
+shell($content, $active);
+require __DIR__ . '/includes/footer.php'; ?>

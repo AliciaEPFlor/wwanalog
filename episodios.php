@@ -1,0 +1,42 @@
+<?php
+/* WWAnalog — Lista pública de episódios registrados. */ require_once __DIR__ . '/includes/functions.php';
+$w = find_work($_GET['obra'] ?? '');
+if (!$w) {
+    http_response_code(404);
+    exit('Obra não encontrada.');
+}
+$active = 'catalog';
+$page_title = 'Episódios — ' . $w['title'];
+require __DIR__ . '/includes/header.php';
+$d = data_read();
+$d['views'][] = ['type' => 'episode_list', 'work_id' => (int) $w['id'], 'user_id' => (int) (user()['id'] ?? 0), 'at' => date('c')];
+data_write($d);
+ob_start(); ?>
+<div class="breadcrumbs"><a href="<?= e(url('catalogo.php')) ?>">Catálogo</a> / <a
+        href="<?= e(url('obra.php?id=' . (int) $w['id'])) ?>"><?= e($w['title']) ?></a> / Episódios</div>
+<div class="section-head">
+    <div>
+        <div class="eyebrow">ARQUIVO DE EPISÓDIOS</div>
+        <h1><?= e($w['title']) ?></h1><small><?= count($w['episodes'] ?? []) ?> episódio(s) cadastrado(s)</small>
+    </div>
+</div>
+<div class="panel">
+    <?php if (!empty($w['episodes'])):
+        foreach ($w['episodes'] as $i => $ep): ?>        <?php $episodeHref = url('episodio.php?obra=' . (int) $w['id'] . '&ep=' . $i);
+                  $hasLocal = !empty($ep['local_video']) && is_file(__DIR__ . '/' . ltrim($ep['local_video'], '/')); ?><a
+                class="episode" href="<?= e($episodeHref) ?>">
+                <div class="episode-no"><?= str_pad((string) ($ep['number'] ?? ($i + 1)), 2, '0', STR_PAD_LEFT) ?></div>
+                <div>
+                    <h3><?= e($ep['title'] ?? 'Episódio ' . ($i + 1)) ?></h3>
+                    <p>Episódio <?= str_pad((string) ($ep['number'] ?? ($i + 1)), 2, '0', STR_PAD_LEFT) ?></p>
+                </div><span
+                    class="tag"><?= $hasLocal ? 'Assistir no WWAnalog' : (!empty($ep['url']) ? 'Abrir episódio' : 'Vídeo não enviado') ?></span>
+            </a><?php endforeach; else: ?>
+        <div class="empty">Nenhum episódio foi cadastrado. A equipe poderá adicioná-los pelo painel do desenvolvedor.</div>
+    <?php endif; ?>
+</div>
+<div class="hero-actions"><a class="btn ghost" href="<?= e(url('obra.php?id=' . (int) $w['id'])) ?>">Voltar aos
+        detalhes</a><a class="btn ghost" href="<?= e(url('catalogo.php')) ?>">Catálogo</a></div>
+<?php $content = ob_get_clean();
+shell($content, $active);
+require __DIR__ . '/includes/footer.php'; ?>

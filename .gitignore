@@ -1,0 +1,12 @@
+
+
+# Segredos e configurações locais
+.env
+.env.*
+!.env.example
+database/config.local.php
+
+*.log
+
+# Chaves privadas do assistente Gemini
+config/ai.local.php

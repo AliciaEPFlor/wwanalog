@@ -1,0 +1,121 @@
+<?php
+/* WWAnalog — Gerenciamento legado de episódios, usando o armazenamento local. */ require_once __DIR__ . '/../../includes/functions.php';
+require_admin();
+$page_title = 'Gerenciar episódios';
+$active = 'admin';
+require __DIR__ . '/../../includes/header.php';
+check_csrf();
+$d = data_read();
+$msg = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $wid = (int)($_POST['work_id'] ?? 0);
+    foreach ($d['works'] as &$w) if ((int)$w['id'] === $wid) {
+        if (isset($_POST['add_episode'])) {
+            $title = trim($_POST['title'] ?? '');
+            if ($title !== '') {
+                $ep = ['number' => count($w['episodes'] ?? []) + 1, 'title' => $title, 'duration' => trim($_POST['duration'] ?? ''), 'url' => trim($_POST['url'] ?? ''), 'embed_url' => trim($_POST['embed_url'] ?? ''), 'description' => trim($_POST['description'] ?? '')];
+                $file = $_FILES['video_file'] ?? null;
+                if ($file && ($file['error'] ?? UPLOAD_ERR_NO_FILE) !== UPLOAD_ERR_NO_FILE) {
+                    $allowed = ['mp4' => 'video/mp4', 'webm' => 'video/webm', 'ogv' => 'video/ogg', 'm4v' => 'video/mp4'];
+                    $ext = strtolower(pathinfo($file['name'] ?? '', PATHINFO_EXTENSION));
+                    if (($file['error'] ?? UPLOAD_ERR_OK) !== UPLOAD_ERR_OK) {
+                        $msg = 'Falha no envio do vídeo. Verifique os limites de upload do PHP.';
+                    } elseif (!isset($allowed[$ext]) || !is_uploaded_file($file['tmp_name'])) {
+                        $msg = 'Formato inválido. Use MP4, WEBM, OGV ou M4V.';
+                    } elseif (($file['size'] ?? 0) > 536870912) {
+                        $msg = 'O vídeo ultrapassa o limite de 512 MB.';
+                    } else {
+                        $slug = preg_replace('/[^a-z0-9_-]/i', '-', (string)($w['slug'] ?? $wid));
+                        $dir = __DIR__ . '/../../media/episodes/' . $slug;
+                        if (!is_dir($dir)) mkdir($dir, 0755, true);
+                        $filename = 'ep-' . date('YmdHis') . '-' . bin2hex(random_bytes(4)) . '.' . $ext;
+                        if (move_uploaded_file($file['tmp_name'], $dir . '/' . $filename)) {
+                            $ep['local_video'] = 'media/episodes/' . $slug . '/' . $filename;
+                            $msg = 'Episódio adicionado com vídeo hospedado no WWAnalog.';
+                        } else {
+                            $msg = 'Não foi possível salvar o vídeo. Verifique as permissões da pasta media/episodes.';
+                        }
+                    }
+                }
+                if (!$msg) {
+                    $msg = 'Episódio adicionado. ' . (!empty($ep['url']) ? 'Vídeo externo mantido como alternativa.' : 'Envie um arquivo para hospedá-lo na aplicação.');
+                }
+                if (empty($msg) || strpos($msg, 'Falha no envio') !== 0 && strpos($msg, 'Formato inválido') !== 0 && strpos($msg, 'O vídeo ultrapassa') !== 0 && strpos($msg, 'Não foi possível salvar') !== 0) {
+                    $w['episodes'][] = $ep;
+                }
+            }
+        } elseif (isset($_POST['delete_episode'])) {
+            $idx = (int)$_POST['episode_index'];
+            if (isset($w['episodes'][$idx])) {
+                array_splice($w['episodes'], $idx, 1);
+                $msg = 'Episódio removido.';
+            }
+        }
+        break;
+    }
+    unset($w);
+    if ($msg) {
+        data_write($d);
+        audit_event('episodios_atualizados', $msg . ' Obra ID ' . $wid);
+    }
+    $d = data_read();
+}
+$filterWork = (string)($_GET['work_id'] ?? '');
+$q = trim($_GET['q'] ?? '');
+$visibleWorks = array_values(array_filter($d['works'], function ($w) use ($filterWork, $q) {
+    if ($filterWork !== '' && (string)$w['id'] !== $filterWork) return false;
+    if ($q !== '' && stripos($w['title'] ?? '', $q) === false && stripos(implode(' ', array_map(fn($ep) => $ep['title'] ?? '', $w['episodes'] ?? [])), $q) === false) return false;
+    return true;
+})); ?><div class="section-head">
+    <div>
+        <div class="eyebrow">PAINEL DO DESENVOLVEDOR</div>
+        <h1>Gerenciar episódios</h1>
+    </div>
+</div><?php if ($msg): ?><div class="notice success"><?= e($msg) ?></div><?php endif; ?><div class="two-col">
+    <section class="panel">
+        <h2>Adicionar episódio</h2>
+        <form method="post" enctype="multipart/form-data"><input type="hidden" name="csrf" value="<?= csrf() ?>"><label>Obra</label>
+        <select class="select" name="work_id">
+        <?php foreach ($d['works'] as $w): ?><option value="<?= $w['id'] ?>"><?= e($w['title']) ?></option><?php endforeach; ?>
+        </select>
+        <label>Título do episódio</label>
+        <input class="input" name="title" required>
+        <label>Duração</label>
+        <input class="input" name="duration" placeholder="Ex.: 12 min">
+        <label>Arquivo de vídeo para hospedar na aplicação (MP4, WEBM, OGV ou M4V; até 512 MB)</label>
+        <input class="input" name="video_file" type="file" accept="video/mp4,video/webm,video/ogg,.m4v">
+        <label>URL original (opcional, alternativa)</label>
+        <input class="input" name="url" type="url">
+        <label>URL de incorporação YouTube (opcional)</label>
+        <input class="input" name="embed_url" type="url" placeholder="https://www.youtube.com/embed/ID">
+        <label>Descrição</label>
+        <textarea class="textarea" name="description" rows="3"></textarea><button class="btn" name="add_episode" value="1">Adicionar episódio</button></form>
+    </section>
+    <section class="panel">
+        <h2>Episódios cadastrados</h2>
+        <form method="get" style="display:flex;gap:10px;flex-wrap:wrap;margin:14px 0">
+            <input class="input" style="flex:1;min-width:160px" name="q" value="<?= e($q) ?>" placeholder="Buscar obra ou episódio">
+        <select class="select" name="work_id">
+                <option value="">Todas as obras</option>
+                <?php foreach ($d['works'] as $optionWork): ?>
+                    <option value="<?= e($optionWork['id']) ?>" <?= $filterWork === (string)$optionWork['id'] ? 'selected' : '' ?>><?= e($optionWork['title']) ?></option>
+                <?php endforeach; ?>
+            </select>
+            <button class="btn">Filtrar</button><a class="btn ghost" href="<?= e(url('people/admin/episodes.php')) ?>">Limpar</a></form>
+            <?php foreach ($visibleWorks as $w): if (!empty($w['episodes'])): ?><h3><?= e($w['title']) ?></h3><?php foreach ($w['episodes'] as $i => $ep): ?><div class="episode">
+                        <div><strong><?= e($ep['title'] ?? 'Episódio') ?></strong>
+                            <p><?= e($ep['duration'] ?? '') ?><?= !empty($ep['local_video']) ? ' · Hospedado no WWAnalog' : '' ?></p>
+                        </div>
+                        <form method="post">
+                            <input type="hidden" name="csrf" value="<?= csrf() ?>">
+                            <input type="hidden" name="work_id" value="<?= $w['id'] ?>">
+                            <input type="hidden" name="episode_index" value="<?= $i ?>"><button class="btn danger" name="delete_episode" value="1">Remover</button>
+                        </form>
+            </div>
+            
+<?php
+endforeach;                                                                                    endif;
+endforeach; 
+?>
+    </section>
+</div><?php require __DIR__ . '/../../includes/footer.php'; ?>

@@ -1,0 +1,5 @@
+# WWAnalog — Regras de proteção/servidor deste diretório; revise conforme o servidor de hospedagem.
+Options -Indexes
+<FilesMatch \"\.(php|phtml|phar|cgi|pl|py|sh)$\">
+Require all denied
+</FilesMatch>
