@@ -6,9 +6,9 @@
  */
 return [
     'driver' => 'pgsql',
-    'host' => '127.0.0.1',
+    'host' => '192.168.10.11',
     'port' => '5432',
     'dbname' => 'wwanalog',
     'user' => 'wwadmin',
-    'password' => '12345',
+    'password' => 'PREENCHA_COM_A_SENHA_DO_POSTGRESQL',
 ];

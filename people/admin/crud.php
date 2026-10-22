@@ -581,4 +581,73 @@ require __DIR__ . '/../../includes/header.php';
         </form>
     </section>
 
-<!-- ===== FORMULÁRIOS ESPECIAIS (comentários, usuários, solicitações) ===== -->
+<!-- ===== FORMULÁRIOS ESPECIAIS (comentários, usuários, solicitações) ===== --><?php endif; ?>
+
+<?php if (in_array($entity, ['comments', 'users', 'contact_requests'], true)): ?>
+<section class="panel">
+    <h2><?= $editRow ? 'Editar registro' : 'Cadastrar / atualizar registro' ?></h2>
+    <form method="post" class="formbox formbox-wide">
+        <input type="hidden" name="csrf" value="<?= crud_h(csrf()) ?>">
+        <input type="hidden" name="entity" value="<?= crud_h($entity) ?>">
+        <input type="hidden" name="action" value="save">
+        <input type="hidden" name="id" value="<?= (int)($editRow['id'] ?? 0) ?>">
+        <?php if ($entity === 'comments'): ?>
+            <?php if (!$editRow): ?>
+                <label>Usuário *</label><select class="select" name="user_id" required><option value="">Selecione</option><?php foreach ($users as $u): ?><option value="<?= (int)$u['id'] ?>"><?= crud_h($u['nickname']) ?></option><?php endforeach; ?></select>
+                <label>Obra *</label><select class="select" name="work_id" required><option value="">Selecione</option><?php foreach ($works as $w): ?><option value="<?= (int)$w['id'] ?>"><?= crud_h($w['title']) ?></option><?php endforeach; ?></select>
+            <?php endif; ?>
+            <label>Conteúdo *</label><textarea class="textarea" name="content" required><?= crud_h($editRow['content'] ?? '') ?></textarea>
+            <label>Status</label>
+            <select class="select" name="status" required>
+                <?php foreach (['published'=>'Publicado','pending'=>'Pendente','flagged'=>'Sinalizado','removed'=>'Removido','publicado'=>'Publicado','oculto'=>'Oculto','removido'=>'Removido'] as $value=>$label): ?>
+                    <option value="<?= crud_h($value) ?>" <?= ($editRow['status'] ?? 'published') === $value ? 'selected' : '' ?>><?= crud_h($label) ?></option>
+                <?php endforeach; ?>
+            </select>
+        <?php elseif ($entity === 'users'): ?>
+            <label>Nome *</label><input class="input" name="name" value="<?= crud_h($editRow['name'] ?? '') ?>" <?= $editRow ? 'readonly' : 'required' ?>>
+            <label>Apelido *</label><input class="input" name="nickname" value="<?= crud_h($editRow['nickname'] ?? '') ?>" <?= $editRow ? 'readonly' : 'required' ?>>
+            <label>E-mail *</label><input class="input" type="email" name="email" value="<?= crud_h($editRow['email'] ?? '') ?>" <?= $editRow ? 'readonly' : 'required' ?>>
+            <?php if (!$editRow): ?><label>Senha (mínimo 8 caracteres) *</label><input class="input" type="password" name="password" minlength="8" required autocomplete="new-password"><?php endif; ?>
+            <label>Papel</label><select class="select" name="role_id" required><?php foreach ($roles as $r): ?><option value="<?= (int)$r['id'] ?>" <?= (string)($editRow['role_id'] ?? '') === (string)$r['id'] ? 'selected' : '' ?>><?= crud_h($r['name']) ?></option><?php endforeach; ?></select>
+            <label>Status</label><select class="select" name="status" required><?php foreach (['ativo','suspenso','inativo','active','suspended','inactive'] as $s): ?><option value="<?= crud_h($s) ?>" <?= ($editRow['status'] ?? 'ativo') === $s ? 'selected' : '' ?>><?= crud_h($s) ?></option><?php endforeach; ?></select>
+        <?php else: ?>
+            <label>Nome</label><input class="input" name="name" value="<?= crud_h($editRow['name'] ?? '') ?>">
+            <label>E-mail</label><input class="input" type="email" name="email" value="<?= crud_h($editRow['email'] ?? '') ?>">
+            <label>Tipo</label><select class="select" name="request_type" required><?php foreach (['correcao','atualizacao','remocao','reclamacao','sugestao','outro'] as $type): ?><option value="<?= crud_h($type) ?>" <?= ($editRow['request_type'] ?? 'outro') === $type ? 'selected' : '' ?>><?= crud_h($type) ?></option><?php endforeach; ?></select>
+            <label>Assunto *</label><input class="input" name="subject" value="<?= crud_h($editRow['subject'] ?? '') ?>" <?= $editRow ? 'readonly' : 'required' ?>>
+            <?php if (!$editRow): ?><label>Mensagem *</label><textarea class="textarea" name="message" required></textarea><?php endif; ?>
+            <label>Status</label><select class="select" name="status" required><?php foreach (['pendente','em_analise','resolvida','rejeitada'] as $s): ?><option value="<?= crud_h($s) ?>" <?= ($editRow['status'] ?? 'pendente') === $s ? 'selected' : '' ?>><?= crud_h($s) ?></option><?php endforeach; ?></select>
+        <?php endif; ?>
+        <button class="btn" type="submit"><?= $editRow ? 'Salvar alterações' : 'Cadastrar' ?></button>
+        <?php if ($editRow): ?><a class="btn ghost" href="crud.php?entity=<?= crud_h($entity) ?>">Cancelar</a><?php endif; ?>
+    </form>
+</section>
+<?php endif; ?>
+
+<section class="panel">
+    <h2>Registros</h2>
+    <form method="get" class="formbox" style="margin-bottom:16px">
+        <input type="hidden" name="entity" value="<?= crud_h($entity) ?>">
+        <label for="q">Buscar</label>
+        <input class="input" id="q" name="q" value="<?= crud_h($_GET['q'] ?? '') ?>" placeholder="Digite para pesquisar">
+        <button class="btn" type="submit">Buscar</button>
+    </form>
+    <?php if (!$rows): ?>
+        <p class="muted">Nenhum registro encontrado.</p>
+    <?php else: ?>
+        <div style="overflow-x:auto"><table class="table">
+            <thead><tr><?php foreach (array_keys($rows[0]) as $col): ?><th><?= crud_h($col) ?></th><?php endforeach; ?><th>Ações</th></tr></thead>
+            <tbody><?php foreach ($rows as $row): ?><tr>
+                <?php foreach ($row as $value): ?><td><?= crud_h(is_scalar($value) || $value === null ? ($value ?? '') : json_encode($value, JSON_UNESCAPED_UNICODE)) ?></td><?php endforeach; ?>
+                <td class="hero-actions">
+                    <a class="btn ghost" href="crud.php?entity=<?= crud_h($entity) ?>&amp;edit=<?= (int)$row['id'] ?>">Editar</a>
+                    <form method="post" onsubmit="return confirm('Confirma a exclusão deste registro?')" style="display:inline">
+                        <input type="hidden" name="csrf" value="<?= crud_h(csrf()) ?>"><input type="hidden" name="entity" value="<?= crud_h($entity) ?>"><input type="hidden" name="id" value="<?= (int)$row['id'] ?>"><input type="hidden" name="action" value="delete">
+                        <button class="btn ghost" type="submit">Excluir</button>
+                    </form>
+                </td>
+            </tr><?php endforeach; ?></tbody>
+        </table></div>
+    <?php endif; ?>
+</section>
+<?php require __DIR__ . '/../../includes/footer.php'; ?>
