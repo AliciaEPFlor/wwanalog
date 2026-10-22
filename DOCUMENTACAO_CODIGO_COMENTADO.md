@@ -1,10 +1,5 @@
 # WWAnalog — Manual de leitura, comentários e indentação
 
-## Padrão adotado
-
-O código foi revisado para que cada arquivo PHP tenha um comentário inicial que identifique sua responsabilidade. Nos fluxos de maior risco ou complexidade, os comentários também explicam as etapas de validação, autorização, acesso ao banco e apresentação dos dados. O arquivo `.editorconfig` define UTF-8, LF, quatro espaços para indentação e remoção de espaços finais.
-
-
 ## Caminho de uma requisição
 
 1. O servidor abre a página PHP solicitada.
