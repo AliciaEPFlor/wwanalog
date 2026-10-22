@@ -5590,7 +5590,7 @@ return array (
       'name' => 'Administrador',
       'nickname' => 'Admin',
       'email' => 'admin@wwanalog.local',
-      'password' => '$2y$12$NUtl..nqb9MjK8iNqD0rkeWbAjiMzH3y0WzjLrh5nh2jejpBQTF8.',
+      'password' => '123456',
       'role' => 'Administrador',
     ),
     1 => 
@@ -5599,7 +5599,7 @@ return array (
       'name' => 'Desenvolvedor WWAnalog',
       'nickname' => 'Desenvolvedor',
       'email' => 'alciiaelizabethpilarflor@gmail.com',
-      'password' => '$2y$12$vBeG23co48/FQV8kDRmmXePQB9pzl7C3XAb987p.QSb0kmztSmi0y',
+      'password' => '12346',
       'role' => 'Administrador',
       'bio' => '',
     ),
