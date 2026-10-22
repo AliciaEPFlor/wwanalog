@@ -1,5 +1,0 @@
-<?php $page_title='ARG';require __DIR__.'/../../includes/header.php';$d=data_read();$items=[];foreach($d['works'] as $w)if($w['category']==='args')$items[]=$w;ob_start(); ?>
-<div class="breadcrumbs"><a href="<?=e(url('catalogo.php'))?>">Catálogo</a> / ARG</div>
-<div class="hero"><div class="eyebrow">CATEGORIA // ARGS</div><h1>ARG</h1><p>Obras arquivadas nesta categoria. Cada registro pode receber episódios, links externos e informações adicionais posteriormente.</p></div>
-<div class="section-head"><div><h2>Obras</h2><small><?=count($items)?> registro(s)</small></div></div><div class="grid"><?php foreach($items as $w): ?><article class="card"><div class="cover <?=e(cover_class($w))?>">WWA ARCHIVE</div><h3><?=e($w['title'])?></h3><div class="meta"><?=e($w['year']?:'Ano não cadastrado')?></div><p class="desc"><?=e($w['description']?:'Descrição ainda não cadastrada.')?></p><span class="tag"><?=e($w['tag'])?></span><div style="margin-top:13px"><a class="btn" href="<?=e(work_path($w))?>">Ver obra</a></div></article><?php endforeach; ?></div>
-<?php $content=ob_get_clean();shell($content);require __DIR__.'/../../includes/footer.php'; ?>
