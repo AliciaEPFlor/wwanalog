@@ -5599,7 +5599,7 @@ return array (
       'name' => 'Desenvolvedor WWAnalog',
       'nickname' => 'Desenvolvedor',
       'email' => 'alciiaelizabethpilarflor@gmail.com',
-      'password' => '12346',
+      'password' => '123456',
       'role' => 'Administrador',
       'bio' => '',
     ),
