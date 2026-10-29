@@ -452,7 +452,7 @@ a:hover {
 
 .detail-head {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    grid-template-columns: minmax(0, 1fr) 280px;
     gap: 24px;
     margin-bottom: 25px
 }
@@ -1609,3 +1609,22 @@ a:hover {
     overflow: hidden;
     background: #000
 }
+/* Ajustes de páginas de obra: capa à direita e comentários públicos */
+.detail-head .detail { order: 1; min-width: 0; }
+.detail-head .detail-cover { order: 2; width: 100%; align-self: start; }
+.login-comment-prompt .textarea { cursor: pointer; opacity: .9; }
+.login-comment-prompt .textarea:focus { outline: 1px solid #a52a36; }
+@media(max-width:760px) { .detail-head .detail-cover { order: 1; max-width: 240px; justify-self: end; } .detail-head .detail { order: 2; } }
+
+/* Painel analítico administrativo inspirado no dashboard de referência */
+.admin-analytics-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:stretch}
+.admin-analytics-grid .analytics-wide{grid-column:1/-1}
+.analytics-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:14px}
+.analytics-three-small{margin-bottom:18px}
+.metric-box{background:linear-gradient(145deg,rgba(105,18,25,.18),rgba(20,20,20,.55));border:1px solid var(--border,#383838);border-radius:8px;padding:16px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.metric-box span{color:var(--muted,#aaa);font-size:.9rem}
+.metric-box strong{font-size:2rem;line-height:1.1;color:var(--text,#eee)}
+.metric-box small{font-size:.78rem;color:var(--muted,#999)}
+.analytics-subtitle{font-size:.88rem;font-weight:700;color:var(--accent,#d74a54);border-bottom:1px solid var(--border,#383838);padding:12px 0 7px;margin:4px 0 8px}
+@media(max-width:900px){.admin-analytics-grid{grid-template-columns:1fr}.admin-analytics-grid .analytics-wide{grid-column:auto}}
+@media(max-width:560px){.analytics-three{grid-template-columns:1fr}.metric-box strong{font-size:1.65rem}}

@@ -133,9 +133,12 @@ function cover_class($w)
 }
 function work_path($w)
 {
-    $pages = array('themonumentmythos' => '/analogs/foundfootage/themmythos/themmythos.php', 'winterof83' => '/analogs/foundfootage/winterof83/winterof83.php', 'backrooms' => '/analogs/foundfootage/backrooms/backrooms.php', 'vcrwillie' => '/analogs/foundfootage/vcrwillie/vcrwillie.php', 'notroad' => '/analogs/foundfootage/notroad/notroad.php', 'mhornets' => '/analogs/foundfootage/mhornets/mhornets.php', 'eventide' => '/analogs/bcasthijacks/emc/emc.php', 'channel7' => '/analogs/bcasthijacks/channel7/channel7.php', 'bluechannel' => '/analogs/bcasthijacks/bluechannel/bluechannel.php', 'duskbcast' => '/analogs/bcasthijacks/duskbcast/duskbcast.php', 'geminihoen' => '/analogs/bcasthijacks/geminihoen/geminihoen.php', 'local58' => '/analogs/bcasthijacks/local58/local58.php', 'themanact' => '/analogs/bcasthijacks/themanact/themanact.php', 'wlandsnapa' => '/analogs/cttpsas/wlandsnapa/wlandsnapa.php', 'chss' => '/analogs/cttpsas/chss/chss.php', 'wseducation' => '/analogs/cttpsas/wsedcation/wsedcation.php', 'lacys' => '/analogs/lostmedia/lacys/lacys.php', 'cchippas' => '/analogs/lostmedia/cchippas/cchippas.php', 'petscop' => '/analogs/lostmedia/petscop/petscop.php', 'waltenfiles' => '/analogs/lostmedia/waltenfiles/waltenfiles.php', 'liminalland' => '/analogs/args/liminalland/liminalland.php', 'mfpnpark' => '/analogs/args/mfpnpark/mfpnpark.php', 'thecomplex' => '/analogs/liminalsp/thecomplex/thecomplex.php', 'theoldview' => '/analogs/liminalsp/theoldview/theoldview.php', 'krainagrzy' => '/analogs/mncorro/krainagry/krainagry.php', 'harmonyhorror' => '/analogs/mncorro/harmonyhorror/harmonyhorror.php', 'ssbar' => '/analogs/mncorro/ssbar/ssbar.php', 'vitacarnis' => '/analogs/ancorro/vitacarnis/vitacarnis.php', 'roforest' => '/analogs/ancorro/roforest/roforest.php', 'sm64c' => '/analogs/imicorro/sm64c/sm64c.php', 'tmk' => '/analogs/imicorro/tmk/tmk.php', 'ndm0use' => '/analogs/imicorro/ndm0use/ndm0use.php', 'magnitoshakhtinskaia' => '/analogs/bcasthijacks/magnitoshakhtinskaia/magnitoshakhtinskaia.php');
-    return url($pages[$w['slug']] ?? ('obra.php?id=' . rawurlencode($w['id'])));
+    // Todas as obras usam a página dinâmica obra.php. Os caminhos antigos
+    // apontavam para arquivos /analogs que não existem nesta versão e faziam
+    // o servidor voltar à página inicial.
+    return url('obra.php?id=' . rawurlencode((string)($w['id'] ?? '')));
 }
+
 function icon($name)
 {
     $icons = [

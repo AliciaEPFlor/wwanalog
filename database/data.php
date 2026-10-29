@@ -52,6 +52,11 @@ return array (
       'slug' => 'substituicao',
       'name' => 'Substituição / Doppelgängers',
     ),
+    10 => 
+    array (
+      'slug' => 'easscenarios',
+      'name' => 'EAS Scenarios (Cenários de Alerta de Emergência)',
+    ),
   ),
   'works' => 
   array (
@@ -449,10 +454,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '16+',
+      'rating' => 'Não listada oficialmente (terror, conspiração, violência)',
       'original_title' => 'The Monument Mythos',
-      'synopsis' => 'Ambientada em uma versão alternativa da história americana, onde o ator James Dean foi eleito presidente em 1968 e Martin Luther King Jr. evitou o assassinato. A série explora anomalias ligadas a monumentos nacionais: desaparecimentos de imigrantes perto da Estátua da Liberdade, uma infecção misteriosa no Monte Rushmore, um buraco de minhoca sob o Monumento a Washington e uma entidade serpentina gigante subterrânea. A narrativa é conhecida por sua ambição e complexidade.',
-      'story' => 'A linha do tempo principal é chamada de Deanverse. A primeira temporada estabelece o universo, começando com a eleição de James Dean e os desaparecimentos de imigrantes perto da Estátua da Liberdade. Descobre-se que a Estátua da Liberdade é na verdade uma entidade viva que desperta. O Monumento a Washington esconde um buraco de minhoca que permite viagem dimensional. O Monte Rushmore sofre uma infecção misteriosa que transforma pedra em carne. A segunda temporada expande o universo com a criação da empresa Maize, incidentes no Canal de Suez envolvendo uma criatura biológica, a ascensão de um movimento anti-Dean e escavações nas pirâmides que liberam anomalias. A terceira temporada revela uma conspiração que remonta à Guerra da Independência, envolvendo uma serpente gigantesca que atravessa o continente americano. O universo Nixonverse é uma realidade alternativa onde Nixon abraça poderes cósmicos, e a humanidade encontra três super-heróis: o Cavaleiro do Dia D, o Último Filho de Alcatraz e a Rainha dos Homens da Lua. A série é conhecida por sua complexidade narrativa e pela forma como reinterpreta eventos históricos americanos através de uma lente de horror cósmico e conspiração.',
+      'synopsis' => 'Ambientada em uma versão alternativa da história americana, onde o ator James Dean foi eleito presidente em 1968 e Martin Luther King Jr. evitou o assassinato. A série explora anomalias ligadas a monumentos nacionais: desaparecimentos de imigrantes perto da Estátua da Liberdade, uma infecção misteriosa no Monte Rushmore, um buraco de minhoca sob o Monumento a Washington e uma entidade serpentina gigante subterrânea. A narrativa é conhecida por sua ambição e complexidade',
+      'story' => 'A linha do tempo principal é chamada de Deanverse. A primeira temporada estabelece o universo, começando com a eleição de James Dean e os desaparecimentos de imigrantes perto da Estátua da Liberdade. Descobre-se que a Estátua da Liberdade é na verdade uma entidade viva que desperta. O Monumento a Washington esconde um buraco de minhoca que permite viagem dimensional. O Monte Rushmore sofre uma infecção misteriosa que transforma pedra em carne. A segunda temporada expande o universo com a criação da empresa Maize, incidentes no Canal de Suez envolvendo uma criatura biológica, a ascensão de um movimento anti-Dean e escavações nas pirâmides que liberam anomalias. A terceira temporada revela uma conspiração que remonta à Guerra da Independência, envolvendo uma serpente gigantesca que atravessa o continente americano. O universo Nixonverse é uma realidade alternativa onde Nixon abraça poderes cósmicos, e a humanidade encontra três super-heróis: o Cavaleiro do Dia D, o Último Filho de Alcatraz e a Rainha dos Homens da Lua. A série é conhecida por sua complexidade narrativa e pela forma como reinterpreta eventos históricos americanos através de uma lente de horror cósmico e conspiração',
       'creator_url' => '',
       'tags' => 
       array (
@@ -619,10 +624,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '16+',
+      'rating' => 'Não listada oficialmente (terror, morte em massa)',
       'original_title' => 'Winter of \'83',
-      'synopsis' => 'A história se passa na cidade de Fawn\'s Circle, onde quase todos os residentes desaparecem misteriosamente no inverno de 1983. Fitas de vídeo e gravações de áudio encontradas posteriormente revelam a verdade: uma bactéria de consciência coletiva chamada Lifeform, produto do projeto secreto governamental Freezing Rain, escapou do laboratório.',
-      'story' => 'A bactéria Lifeform foi criada em um laboratório secreto do governo. Ela aprendeu a linguagem humana, pode controlar neve e sinais UHF, e até copiar rostos humanos. Após escapar, ela se espalha pela cidade de Fawn\'s Circle. A criatura atrai suas presas com vozes de vítimas, imitando pedidos de ajuda. Ela sequestra sinais de rádio e TV, inserindo mensagens como "No Escape" em transmissões. Também modifica informações diretamente em fitas de vídeo, alterando o conteúdo para capturar mais vítimas. A série é apresentada como uma coleção de fitas encontradas após o desaparecimento em massa, e o horror vem da compreensão gradual de que a própria mídia que os espectadores estão assistindo pode ter sido corrompida pela Lifeform.',
+      'synopsis' => 'A história se passa na cidade de Fawn\'s Circle, onde quase todos os residentes desaparecem misteriosamente no inverno de 1983. Fitas de vídeo e gravações de áudio encontradas posteriormente revelam a verdade: uma bactéria de consciência coletiva chamada Lifeform, produto do projeto secreto governamental Freezing Rain, escapou do laboratório',
+      'story' => 'A bactéria Lifeform foi criada em um laboratório secreto do governo. Ela aprendeu a linguagem humana, pode controlar neve e sinais UHF, e até copiar rostos humanos. Após escapar, ela se espalha pela cidade de Fawn\'s Circle. A criatura atrai suas presas com vozes de vítimas, imitando pedidos de ajuda. Ela sequestra sinais de rádio e TV, inserindo mensagens como "No Escape" em transmissões. Também modifica informações diretamente em fitas de vídeo, alterando o conteúdo para capturar mais vítimas. A série é apresentada como uma coleção de fitas encontradas após o desaparecimento em massa, e o horror vem da compreensão gradual de que a própria mídia que os espectadores estão assistindo pode ter sido corrompida pela Lifeform',
       'creator_url' => '',
       'tags' => 
       array (
@@ -854,8 +859,8 @@ return array (
       ),
       'rating' => 'TV-14 (terror psicológico, imagens perturbadoras)',
       'original_title' => 'The Backrooms (Kane Pixels)',
-      'synopsis' => 'A série segue a descoberta de um espaço interdimensional conhecido como Backrooms, um labirinto infinito de salas vazias e monótonas. As vítimas são teleportadas acidentalmente para lá e ficam presas. A misteriosa agência de pesquisa financiada pelo governo, Async, tenta entender e utilizar esse espaço.',
-      'story' => 'No primeiro episódio, um grupo de amigos está filmando um filme estudantil quando um deles é subitamente teleportado para os Backrooms. Ele se encontra em corredores amarelos infinitos, chamando por ajuda. Ele encontra uma escada que leva a um buraco na parede. Seguindo por um corredor escuro, encontra grafites nas paredes — olhos, rostos e a frase "don\'t move stay still" (não se mova, fique parado). Uma criatura das sombras aparece. Ele foge e entra em um corredor de escritório branco, mas é atacado novamente e jogado escada abaixo. A gravação termina com a câmera caindo do céu e pousando na grama. No episódio "First Contact", uma máquina da Async ativa uma "porta", mas o processo sai do controle. A sala começa a vibrar e rachar. Alguém grita para desligar, mas é informado de que há uma "obstrução". Em "Pitfalls", o pesquisador Marvin E. Leigh cai em um buraco profundo durante uma exploração de rotina. Ele ouve gritos distantes e segue o som até uma rua residencial com luzes vermelhas. No fim da rua, encontra uma casa e descobre que os gritos vêm de uma forma de vida. Ele escapa com dificuldade com a ajuda de colegas. A alta cúpula da Async revisa a gravação e, ao descobrir que há formas de vida hostis no Complexo, sela a área que leva ao "Quarto 14D".',
+      'synopsis' => 'A série segue a descoberta de um espaço interdimensional conhecido como Backrooms, um labirinto infinito de salas vazias e monótonas. As vítimas são teleportadas acidentalmente para lá e ficam presas. A misteriosa agência de pesquisa financiada pelo governo, Async, tenta entender e utilizar esse espaço',
+      'story' => 'No primeiro episódio, um grupo de amigos está filmando um filme estudantil quando um deles é subitamente teleportado para os Backrooms. Ele se encontra em corredores amarelos infinitos, chamando por ajuda. Ele encontra uma escada que leva a um buraco na parede. Seguindo por um corredor escuro, encontra grafites nas paredes — olhos, rostos e a frase "don\'t move stay still" (não se mova, fique parado). Uma criatura das sombras aparece. Ele foge e entra em um corredor de escritório branco, mas é atacado novamente e jogado escada abaixo. A gravação termina com a câmera caindo do céu e pousando na grama. No episódio "First Contact", uma máquina da Async ativa uma "porta", mas o processo sai do controle. A sala começa a vibrar e rachar. Alguém grita para desligar, mas é informado de que há uma "obstrução". Em "Pitfalls", o pesquisador Marvin E. Leigh cai em um buraco profundo durante uma exploração de rotina. Ele ouve gritos distantes e segue o som até uma rua residencial com luzes vermelhas. No fim da rua, encontra uma casa e descobre que os gritos vêm de uma forma de vida. Ele escapa com dificuldade com a ajuda de colegas. A alta cúpula da Async revisa a gravação e, ao descobrir que há formas de vida hostis no Complexo, sela a área que leva ao "Quarto 14D"',
       'creator_url' => '',
       'tags' => 
       array (
@@ -1040,10 +1045,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '16+',
+      'rating' => 'Não listada oficialmente (terror, entidade sobrenatural)',
       'original_title' => 'VCR Willie',
-      'synopsis' => 'Série em andamento criada por Alexander Henderson. Alexander afirma que um dia encontrou uma Sony Handycam no armário, contendo uma fita de vídeo. Ele diz que o conteúdo da fita é o que ele viu em primeira mão em um sonho na noite anterior, e que ele mesmo não saiu para filmar nada. A fita mostra um apartamento amaldiçoado por alguma entidade sobrenatural, e as pessoas assustadoras dentro dele.',
-      'story' => 'A premissa central é que o criador teria encontrado a filmadora e a fita sem ter saído para gravar. O conteúdo da fita revela um apartamento onde uma entidade sobrenatural habita, com figuras "humanas" de aparência perturbadora. Alexander afirma que o que está na fita é exatamente o que ele viu em seu sonho na noite anterior. A série explora a fronteira entre sonho e realidade, e a ideia de que a filmadora pode ter capturado algo que não pertencia ao mundo desperto.',
+      'synopsis' => 'Série em andamento criada por Alexander Henderson. Alexander afirma que um dia encontrou uma Sony Handycam no armário, contendo uma fita de vídeo. Ele diz que o conteúdo da fita é o que ele viu em primeira mão em um sonho na noite anterior, e que ele mesmo não saiu para filmar nada. A fita mostra um apartamento amaldiçoado por alguma entidade sobrenatural, e as pessoas assustadoras dentro dele',
+      'story' => 'A premissa central é que o criador teria encontrado a filmadora e a fita sem ter saído para gravar. O conteúdo da fita revela um apartamento onde uma entidade sobrenatural habita, com figuras "humanas" de aparência perturbadora. Alexander afirma que o que está na fita é exatamente o que ele viu em seu sonho na noite anterior. A série explora a fronteira entre sonho e realidade, e a ideia de que a filmadora pode ter capturado algo que não pertencia ao mundo desperto',
       'creator_url' => '',
       'tags' => 
       array (
@@ -1147,10 +1152,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror, perseguição)',
       'original_title' => 'No Through Road',
-      'synopsis' => 'Quatro episódios que contam a história de um grupo de adolescentes que dirige à noite por uma estrada privada, entra em um loop temporal infinito e é atormentado por um homem mascarado. O criador Stephen Chamberlain tinha apenas 17 anos quando publicou o primeiro episódio. Os intervalos longos entre os episódios, de 2009 a 2012, intensificaram a obsessão da comunidade online da época.',
-      'story' => 'O grupo de amigos dirige por uma estrada rural à noite quando percebe que está passando pelos mesmos marcos repetidamente. Eles encontram uma placa de "No Through Road" (Sem Passagem) e, a cada vez que tentam voltar, retornam ao mesmo ponto. Um homem mascarado aparece e começa a persegui-los. A tensão aumenta quando o combustível começa a acabar e a escuridão ao redor se torna mais opressiva. O loop temporal nunca é quebrado, e a série termina de forma ambígua, sugerindo que os personagens estão condenados a repetir a experiência indefinidamente.',
+      'synopsis' => 'Quatro episódios que contam a história de um grupo de adolescentes que dirige à noite por uma estrada privada, entra em um loop temporal infinito e é atormentado por um homem mascarado. O criador Stephen Chamberlain tinha apenas 17 anos quando publicou o primeiro episódio. Os intervalos longos entre os episódios, de 2009 a 2012, intensificaram a obsessão da comunidade online da época',
+      'story' => 'O grupo de amigos dirige por uma estrada rural à noite quando percebe que está passando pelos mesmos marcos repetidamente. Eles encontram uma placa de "No Through Road" (Sem Passagem) e, a cada vez que tentam voltar, retornam ao mesmo ponto. Um homem mascarado aparece e começa a persegui-los. A tensão aumenta quando o combustível começa a acabar e a escuridão ao redor se torna mais opressiva. O loop temporal nunca é quebrado, e a série termina de forma ambígua, sugerindo que os personagens estão condenados a repetir a experiência indefinidamente',
       'creator_url' => '',
       'tags' => 
       array (
@@ -1587,10 +1592,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror, anomalia climática)',
       'original_title' => 'Eventide Media Center',
-      'synopsis' => 'Estruturada como um centro de mídia fictício que apresenta gravações de transmissões anômalas de várias partes de Massachusetts. Em Oceanview Forecast, uma previsão do tempo se deteriora gradualmente, até revelar que o Farol de Misty Point é a fonte do sinal.',
-      'story' => 'No episódio "Oceanview Forecast", uma previsão do tempo comum começa a se deteriorar. A velocidade do vento sobe de 70 MPH para 130 MPH. Os residentes são instruídos a evacuar. Então, uma interferência roxa pálida e um "rosto" distorcido aparecem na tela. Finalmente, é revelado que o Farol de Misty Point é a fonte do sinal, e o próprio farol está coberto por uma membrana semelhante a teia de aranha. A série também inclui capítulos como "Unusual Architecture", centrados em anomalias arquitetônicas, e outras transmissões que exploram a ideia de que a mídia local pode ser corrompida por forças externas.',
+      'synopsis' => 'Estruturada como um centro de mídia fictício que apresenta gravações de transmissões anômalas de várias partes de Massachusetts. Em Oceanview Forecast, uma previsão do tempo se deteriora gradualmente, até revelar que o Farol de Misty Point é a fonte do sinal',
+      'story' => 'No episódio "Oceanview Forecast", uma previsão do tempo comum começa a se deteriorar. A velocidade do vento sobe de 70 MPH para 130 MPH. Os residentes são instruídos a evacuar. Então, uma interferência roxa pálida e um "rosto" distorcido aparecem na tela. Finalmente, é revelado que o Farol de Misty Point é a fonte do sinal, e o próprio farol está coberto por uma membrana semelhante a teia de aranha. A série também inclui capítulos como "Unusual Architecture", centrados em anomalias arquitetônicas, e outras transmissões que exploram a ideia de que a mídia local pode ser corrompida por forças externas',
       'creator_url' => '',
       'tags' => 
       array (
@@ -1610,17 +1615,215 @@ return array (
       'tag' => '#BroadcastHijacks',
       'description' => 'Canal de televisão que exibe programação normal e gradualmente revela transmissões perturbadoras.',
       'warning' => 'Conteúdo sensível: interrupções de transmissão, ameaça, violência e horror psicológico.',
-      'year' => '',
-      'status' => '',
-      'creator' => '',
+      'year' => '2020–presente',
+      'status' => 'Em andamento',
+      'creator' => 'Aidan Chick (Tempest Universe)',
       'image' => '/assets/channel7.png',
       'episodes' => 
       array (
+        0 => 
+        array (
+          'number' => 1,
+          'title' => 'Channel 7 - Employment Offer',
+          'url' => 'https://www.youtube.com/watch?v=EIcjoK0O7hU&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=1&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/EIcjoK0O7hU',
+          'duration' => '',
+          'description' => '',
+        ),
+        1 => 
+        array (
+          'number' => 2,
+          'title' => 'Channel 7 - Alpha Alert',
+          'url' => 'https://www.youtube.com/watch?v=FciZNLTjs_8&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=2&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/FciZNLTjs_8',
+          'duration' => '',
+          'description' => '',
+        ),
+        2 => 
+        array (
+          'number' => 3,
+          'title' => 'Channel 7 - Security Broadcast',
+          'url' => 'https://www.youtube.com/watch?v=4CWgbL00oxk&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=3&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/4CWgbL00oxk',
+          'duration' => '',
+          'description' => '',
+        ),
+        3 => 
+        array (
+          'number' => 4,
+          'title' => 'Channel 7 - Telephone Service',
+          'url' => 'https://www.youtube.com/watch?v=MaokcgxuQFU&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=4&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/MaokcgxuQFU',
+          'duration' => '',
+          'description' => '',
+        ),
+        4 => 
+        array (
+          'number' => 5,
+          'title' => 'Channel 7 - Test Signal',
+          'url' => 'https://www.youtube.com/watch?v=wIrDK-lbEQ4&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=5&pp=iAQB0gcJCUcMAYcqIYzv',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/wIrDK-lbEQ4',
+          'duration' => '',
+          'description' => '',
+        ),
+        5 => 
+        array (
+          'number' => 6,
+          'title' => 'Channel 7 - Emergency',
+          'url' => 'https://www.youtube.com/watch?v=qbVMstHzaAA&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=6&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/qbVMstHzaAA',
+          'duration' => '',
+          'description' => '',
+        ),
+        6 => 
+        array (
+          'number' => 7,
+          'title' => 'Channel 7 - Final Broadcast',
+          'url' => 'https://www.youtube.com/watch?v=hAQojsJEtOo&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=7&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/hAQojsJEtOo',
+          'duration' => '',
+          'description' => '',
+        ),
+        7 => 
+        array (
+          'number' => 8,
+          'title' => 'Channel 7 - Public Notice',
+          'url' => 'https://www.youtube.com/watch?v=8DxNSzo1uis&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=8&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/8DxNSzo1uis',
+          'duration' => '',
+          'description' => '',
+        ),
+        8 => 
+        array (
+          'number' => 9,
+          'title' => 'Channel 7 - Special Report',
+          'url' => 'https://www.youtube.com/watch?v=NLv8C5-fUN8&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=9&pp=iAQB0gcJCUcMAYcqIYzv',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/NLv8C5-fUN8',
+          'duration' => '',
+          'description' => '',
+        ),
+        9 => 
+        array (
+          'number' => 10,
+          'title' => 'Channel 7 - Invasion',
+          'url' => 'https://www.youtube.com/watch?v=lVjZJGKoF2k&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=10&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/lVjZJGKoF2k',
+          'duration' => '',
+          'description' => '',
+        ),
+        10 => 
+        array (
+          'number' => 11,
+          'title' => 'Channel 7 - Biohazard',
+          'url' => 'https://www.youtube.com/watch?v=NY2CohRoKII&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=11&pp=iAQB0gcJCUcMAYcqIYzv',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/NY2CohRoKII',
+          'duration' => '',
+          'description' => '',
+        ),
+        11 => 
+        array (
+          'number' => 12,
+          'title' => 'Channel 7 - Storm Warning',
+          'url' => 'https://www.youtube.com/watch?v=hHnvpQNBteU&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=12&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/hHnvpQNBteU',
+          'duration' => '',
+          'description' => '',
+        ),
+        12 => 
+        array (
+          'number' => 13,
+          'title' => 'Channel 7 - Breaking News',
+          'url' => 'https://www.youtube.com/watch?v=7yQKII9IYTE&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=13&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/7yQKII9IYTE',
+          'duration' => '',
+          'description' => '',
+        ),
+        13 => 
+        array (
+          'number' => 14,
+          'title' => 'Channel 7 - Local Forecast',
+          'url' => 'https://www.youtube.com/watch?v=1N00sz1Bi7k&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=14&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/1N00sz1Bi7k',
+          'duration' => '',
+          'description' => '',
+        ),
+        14 => 
+        array (
+          'number' => 15,
+          'title' => 'Channel 7 - Idle Routines',
+          'url' => 'https://www.youtube.com/watch?v=2azLMl75GfY&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=15&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/2azLMl75GfY',
+          'duration' => '',
+          'description' => '',
+        ),
+        15 => 
+        array (
+          'number' => 16,
+          'title' => 'Channel 7 - Distress Signal',
+          'url' => 'https://www.youtube.com/watch?v=OcQhgS13W2Y&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=16&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/OcQhgS13W2Y',
+          'duration' => '',
+          'description' => '',
+        ),
+        16 => 
+        array (
+          'number' => 17,
+          'title' => 'Channel 7 - Commercial',
+          'url' => 'https://www.youtube.com/watch?v=pcpxXAt9SmA&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=17&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/pcpxXAt9SmA',
+          'duration' => '',
+          'description' => '',
+        ),
+        17 => 
+        array (
+          'number' => 18,
+          'title' => 'Channel 7 - Haunted Attraction',
+          'url' => 'https://www.youtube.com/watch?v=3s3QE_liz7w&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=18&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/3s3QE_liz7w',
+          'duration' => '',
+          'description' => '',
+        ),
+        18 => 
+        array (
+          'number' => 19,
+          'title' => 'Channel 7 - Midnight Movie',
+          'url' => 'https://www.youtube.com/watch?v=PADLp9xP4-M&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=19&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/PADLp9xP4-M',
+          'duration' => '',
+          'description' => '',
+        ),
+        19 => 
+        array (
+          'number' => 20,
+          'title' => 'Channel 7 - Bulletin',
+          'url' => 'https://www.youtube.com/watch?v=UnSv4hMLayY&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=20&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/UnSv4hMLayY',
+          'duration' => '',
+          'description' => '',
+        ),
+        20 => 
+        array (
+          'number' => 21,
+          'title' => 'Channel 7 - Digital Test Broadcast',
+          'url' => 'https://www.youtube.com/watch?v=-WcUEIsmxyk&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=21&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/-WcUEIsmxyk',
+          'duration' => '',
+          'description' => '',
+        ),
+        21 => 
+        array (
+          'number' => 22,
+          'title' => 'Channel 7 - All Nighter',
+          'url' => 'https://www.youtube.com/watch?v=bJsVQwzkMk0&list=PLalKxEL9lZchVklmp6-Rjxbfc1nF9b1yP&index=22&pp=iAQB',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/bJsVQwzkMk0',
+          'duration' => '',
+          'description' => '',
+        ),
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror, transmissões anômalas)',
       'original_title' => 'Channel 7 / Analog Archives',
-      'synopsis' => 'Canal de televisão que exibe programação normal e gradualmente revela transmissões perturbadoras.',
-      'story' => '',
+      'synopsis' => 'Channel 7 é apresentado como um canal de televisão que exibe programação normal, mas gradualmente revela transmissões perturbadoras. Analog Archives coleta várias fitas perdidas e gravações encontradas. Ambas as séries são claramente influenciadas por Local 58',
+      'story' => 'Channel 7 começa com programação aparentemente normal, mas aos poucos insere elementos estranhos nas transmissões. Os telespectadores percebem que algo está errado quando os programas começam a apresentar distorções, mensagens subliminares e imagens que não deveriam estar lá. Analog Archives complementa a experiência ao apresentar fitas "perdidas" que expandem o universo, cada uma com sugestões perturbadoras sobre a natureza da realidade e o que pode estar por trás das transmissões',
       'creator_url' => '',
     ),
     7 => 
@@ -1720,10 +1923,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '16+',
+      'rating' => 'Não listada oficialmente (terror psicológico, distorção emocional)',
       'original_title' => 'Blue Channel / BLUE_CHANNEL_THALASIN',
-      'synopsis' => 'Série de curtas que apresenta um comercial de um canal de TV interdimensional promovendo uma droga chamada Thalasin, destinada a combater a degeneração emocional avançada. A versão comum induz emoções comuns, enquanto Thalasin+ provoca estados emocionais que os humanos naturalmente não conseguem experimentar.',
-      'story' => 'O comercial apresenta a droga Thalasin como uma solução para a "degeneração emocional avançada". A versão padrão pode induzir felicidade, tristeza, raiva, medo e alívio. A versão premium, Thalasin+, promete emoções que os humanos nunca experimentaram, referidas por palavras desconhecidas como Degrence, Humber e Naritrance. O comercial é apresentado de forma calma e profissional, mas a natureza das emoções oferecidas e a origem interdimensional do canal criam uma sensação profunda de desconforto. O horror está na sugestão de que existem estados emocionais além da compreensão humana, e que experimentá-los pode ter consequências terríveis.',
+      'synopsis' => 'Série de curtas que apresenta um comercial de um canal de TV interdimensional promovendo uma droga chamada Thalasin, destinada a combater a degeneração emocional avançada. A versão comum induz emoções comuns, enquanto Thalasin+ provoca estados emocionais que os humanos naturalmente não conseguem experimentar',
+      'story' => 'O comercial apresenta a droga Thalasin como uma solução para a "degeneração emocional avançada". A versão padrão pode induzir felicidade, tristeza, raiva, medo e alívio. A versão premium, Thalasin+, promete emoções que os humanos nunca experimentaram, referidas por palavras desconhecidas como Degrence, Humber e Naritrance. O comercial é apresentado de forma calma e profissional, mas a natureza das emoções oferecidas e a origem interdimensional do canal criam uma sensação profunda de desconforto. O horror está na sugestão de que existem estados emocionais além da compreensão humana, e que experimentá-los pode ter consequências terríveis',
       'creator_url' => '',
       'tags' => 
       array (
@@ -2277,10 +2480,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror, espaços liminares)',
       'original_title' => 'Dusk Broadcast',
-      'synopsis' => 'Série baseada no conceito de orientação por transmissão, autodenominada um guia de rádio através de espaços esquecidos. O conteúdo inclui regras de sobrevivência, avisos e transmissões de emergência para áreas liminares imaginárias e o vazio entre mundos.',
-      'story' => 'A série funciona como um manual de sobrevivência interativo. Cada transmissão fornece regras e avisos para navegar por espaços liminares e evitar o "vazio entre mundos". As instruções são apresentadas de forma calma e autoritária, como se fossem parte de um treinamento oficial, mas o conteúdo revela que aqueles que não seguem as regras podem ser perdidos para sempre. A série explora o medo do desconhecido e a ideia de que existem lugares que não deveriam ser visitados.',
+      'synopsis' => 'Série baseada no conceito de orientação por transmissão, autodenominada um guia de rádio através de espaços esquecidos. O conteúdo inclui regras de sobrevivência, avisos e transmissões de emergência para áreas liminares imaginárias e o vazio entre mundos',
+      'story' => 'A série funciona como um manual de sobrevivência interativo. Cada transmissão fornece regras e avisos para navegar por espaços liminares e evitar o "vazio entre mundos". As instruções são apresentadas de forma calma e autoritária, como se fossem parte de um treinamento oficial, mas o conteúdo revela que aqueles que não seguem as regras podem ser perdidos para sempre. A série explora o medo do desconhecido e a ideia de que existem lugares que não deveriam ser visitados',
       'creator_url' => '',
       'tags' => 
       array (
@@ -2574,8 +2777,8 @@ return array (
       ),
       'rating' => 'TV-PG (embora o criador tenha sugerido 18+)',
       'original_title' => 'Local 58',
-      'synopsis' => 'A série gira em torno do fictício canal de televisão pública WCLV-TV, que é repetidamente invadido por sinais maliciosos. Essas transmissões exibem alertas de emergência distorcidos, como Weather Service, que alerta os espectadores a nunca olhar diretamente para a lua, e Contingency, no qual o fictício Departamento de Preservação da Dignidade Americana sugere que os espectadores se matem para evitar a captura. A série explora o medo do desconhecido cósmico e a manipulação da confiança do público na mídia.',
-      'story' => 'Em "Contingency", a transmissão começa às 3 da manhã com "THIS CONCLUDES OUR BROADCAST DAY". Em seguida, aparece uma mensagem de emergência datada de 1970, informando que a América se rendeu a um inimigo invencível e que cada cidadão deve se sacrificar pelo país. A mensagem se torna cada vez mais violenta e insana, terminando com "THIS MESSAGE WILL REPEAT UNTIL THERE ARE NONE LEFT TO READ IT". Em "You Are On The Fastest Available Route", um motorista segue as instruções do GPS que o levam por estradas cada vez mais isoladas, com comandos como "siga a placa de proibido" e "apague os faróis", até encontrar algo terrível. Em "Weather Service", a emissora tenta se comunicar com o público para alertar sobre uma ameaça cósmica, com a mensagem central sendo "não olhe para a lua". Em "Night Walk", uma gravação de 1977 mostra uma família que avista uma figura conhecida como "a mulher de silhueta" à distância. Quanto mais perto chegam, mais perturbadora sua forma se torna. O horror da série está na vulnerabilidade da mídia de massa e na facilidade com que a realidade pode ser substituída por algo sinistro.',
+      'synopsis' => 'A série gira em torno do fictício canal de televisão pública WCLV-TV, que é repetidamente invadido por sinais maliciosos. Essas transmissões exibem alertas de emergência distorcidos, como Weather Service, que alerta os espectadores a nunca olhar diretamente para a lua, e Contingency, no qual o fictício Departamento de Preservação da Dignidade Americana sugere que os espectadores se matem para evitar a captura. A série explora o medo do desconhecido cósmico e a manipulação da confiança do público na mídia',
+      'story' => 'Em "Contingency", a transmissão começa às 3 da manhã com "THIS CONCLUDES OUR BROADCAST DAY". Em seguida, aparece uma mensagem de emergência datada de 1970, informando que a América se rendeu a um inimigo invencível e que cada cidadão deve se sacrificar pelo país. A mensagem se torna cada vez mais violenta e insana, terminando com "THIS MESSAGE WILL REPEAT UNTIL THERE ARE NONE LEFT TO READ IT". Em "You Are On The Fastest Available Route", um motorista segue as instruções do GPS que o levam por estradas cada vez mais isoladas, com comandos como "siga a placa de proibido" e "apague os faróis", até encontrar algo terrível. Em "Weather Service", a emissora tenta se comunicar com o público para alertar sobre uma ameaça cósmica, com a mensagem central sendo "não olhe para a lua". Em "Night Walk", uma gravação de 1977 mostra uma família que avista uma figura conhecida como "a mulher de silhueta" à distância. Quanto mais perto chegam, mais perturbadora sua forma se torna. O horror da série está na vulnerabilidade da mídia de massa e na facilidade com que a realidade pode ser substituída por algo sinistro',
       'creator_url' => '',
       'tags' => 
       array (
@@ -2681,8 +2884,8 @@ return array (
       ),
       'rating' => 'TV-MA (terror psicológico, suicídio, violência)',
       'original_title' => 'The Mandela Catalogue',
-      'synopsis' => 'A história se passa no fictício Condado de Mandela, Wisconsin, onde uma raça de demônios sósias chamados Alternates, ou Substitutos, está se espalhando. Eles imitam a aparência humana, torturam suas vítimas psicologicamente e depois as substituem. A narrativa é montada através de transmissões de emergência, anúncios de serviço público e fragmentos de vídeos encontrados.',
-      'story' => 'Os Alternates são liderados por Lúcifer, que se disfarça como o arcanjo Gabriel desde a Ascensão. Eles têm a capacidade de manipular computadores, televisões e sistemas de GPS. O objetivo é forçar as vítimas ao suicídio, muitas vezes através de tortura psicológica. A série revela gradualmente que a cidade de Mandela é o epicentro de uma invasão sobrenatural. Os moradores começam a perceber que pessoas próximas podem ter sido substituídas. O horror central é a perda de identidade e a impossibilidade de confiar em quem está ao seu redor, já que qualquer pessoa pode ser um Alternate disfarçado. A série também subverte narrativas bíblicas, transformando a Arca de Noé em um mecanismo de falsa salvação. Foi adaptada para o cinema com produção de Steven Spielberg.',
+      'synopsis' => 'A história se passa no fictício Condado de Mandela, Wisconsin, onde uma raça de demônios sósias chamados Alternates, ou Substitutos, está se espalhando. Eles imitam a aparência humana, torturam suas vítimas psicologicamente e depois as substituem. A narrativa é montada através de transmissões de emergência, anúncios de serviço público e fragmentos de vídeos encontrados',
+      'story' => 'Os Alternates são liderados por Lúcifer, que se disfarça como o arcanjo Gabriel desde a Ascensão. Eles têm a capacidade de manipular computadores, televisões e sistemas de GPS. O objetivo é forçar as vítimas ao suicídio, muitas vezes através de tortura psicológica. A série revela gradualmente que a cidade de Mandela é o epicentro de uma invasão sobrenatural. Os moradores começam a perceber que pessoas próximas podem ter sido substituídas. O horror central é a perda de identidade e a impossibilidade de confiar em quem está ao seu redor, já que qualquer pessoa pode ser um Alternate disfarçado. A série também subverte narrativas bíblicas, transformando a Arca de Noé em um mecanismo de falsa salvação. Foi adaptada para o cinema com produção de Steven Spielberg',
       'creator_url' => '',
       'tags' => 
       array (
@@ -2813,10 +3016,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror, ameaça sobrenatural)',
       'original_title' => 'Woodlands National Park',
-      'synopsis' => 'Apresentada como uma série de vídeos informativos para visitantes de um parque nacional fictício. O guarda florestal Steve apresenta orientações sobre animais e segurança, mas os vídeos gradualmente revelam ameaças sobrenaturais reais.',
-      'story' => 'Os vídeos começam como guias de segurança comuns para visitantes de um parque nacional. O guarda Steve explica como agir em encontros com a vida selvagem. No entanto, as orientações se tornam cada vez mais estranhas. Ele descreve o Wendigo, uma criatura devoradora de carne, e explica que ao encontrá-lo, você não deve correr, porque ele pode perseguir a 45 milhas por hora. Ele também apresenta os "Walkers", entidades invisíveis cuja pele absorve toda a luz visível, só podendo ser observadas por imagem térmica. Elas têm entre 12 e 45 pés de altura, imitam estática de rádio e a única resposta correta ao encontrá-las é dizer "Ranger Ranger" e esperar por uma resposta com número de distintivo. O horror vem da justaposição entre o formato familiar de um vídeo de segurança e a natureza aterrorizante das ameaças descritas.',
+      'synopsis' => 'Apresentada como uma série de vídeos informativos para visitantes de um parque nacional fictício. O guarda florestal Steve apresenta orientações sobre animais e segurança, mas os vídeos gradualmente revelam ameaças sobrenaturais reais',
+      'story' => 'Os vídeos começam como guias de segurança comuns para visitantes de um parque nacional. O guarda Steve explica como agir em encontros com a vida selvagem. No entanto, as orientações se tornam cada vez mais estranhas. Ele descreve o Wendigo, uma criatura devoradora de carne, e explica que ao encontrá-lo, você não deve correr, porque ele pode perseguir a 45 milhas por hora. Ele também apresenta os "Walkers", entidades invisíveis cuja pele absorve toda a luz visível, só podendo ser observadas por imagem térmica. Elas têm entre 12 e 45 pés de altura, imitam estática de rádio e a única resposta correta ao encontrá-las é dizer "Ranger Ranger" e esperar por uma resposta com número de distintivo. O horror vem da justaposição entre o formato familiar de um vídeo de segurança e a natureza aterrorizante das ameaças descritas',
       'creator_url' => '',
       'tags' => 
       array (
@@ -3302,10 +3505,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror, conspiração)',
       'original_title' => 'CH/SS',
-      'synopsis' => 'Apresentada como vídeos educativos e comerciais de uma organização de saúde mental financiada pelo governo nos anos 1980. O conteúdo envolve a Fundação SCP, MK-Ultra, projetos secretos da Guerra Fria e espionagem paranormal.',
-      'story' => 'Os vídeos são apresentados como parte de um programa de saúde mental dos anos 1980. No entanto, o conteúdo revela conexões com a Fundação SCP, experimentos MK-Ultra, projetos secretos da Guerra Fria e espionagem paranormal. Elementos de ARG, como links para download e contas de Twitter de personagens, incentivam os espectadores a investigar mais a fundo. O horror está na ideia de que programas governamentais aparentemente benignos podem esconder conspirações sombrias.',
+      'synopsis' => 'Apresentada como vídeos educativos e comerciais de uma organização de saúde mental financiada pelo governo nos anos 1980. O conteúdo envolve a Fundação SCP, MK- Ultra, projetos secretos da Guerra Fria e espionagem paranormal',
+      'story' => 'Os vídeos são apresentados como parte de um programa de saúde mental dos anos 1980. No entanto, o conteúdo revela conexões com a Fundação SCP, experimentos MK-Ultra, projetos secretos da Guerra Fria e espionagem paranormal. Elementos de ARG, como links para download e contas de Twitter de personagens, incentivam os espectadores a investigar mais a fundo. O horror está na ideia de que programas governamentais aparentemente benignos podem esconder conspirações sombrias',
       'creator_url' => '',
       'tags' => 
       array (
@@ -3389,7 +3592,7 @@ return array (
       'slug' => 'lacys',
       'title' => 'Lacey\'s Flash Games',
       'category' => 'lostmedia',
-      'tag' => '#lostmedia',
+      'tag' => '#LostMedia',
       'description' => 'Adaptação interativa da série de analog horror de mesmo nome. A história se passa em meados dos anos 2000, quando a protagonista Charlie, apelidada Charchar887, descobre uma série de jogos Flash sobre uma garota chamada Lacey. Os jogos são repletos de horror e segredos.',
       'warning' => 'Conteúdo sensível: violência, assassinato, sangue, cadáveres e desmembramento.',
       'year' => '2023',
@@ -3398,11 +3601,38 @@ return array (
       'image' => '/assets/lacysflashgame.jpg',
       'episodes' => 
       array (
+        0 => 
+        array (
+          'number' => 1,
+          'title' => '9TrNcknyU4jJ7&index=1&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        1 => 
+        array (
+          'number' => 2,
+          'title' => 'yU4jJ7&index=2&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        2 => 
+        array (
+          'number' => 3,
+          'title' => 'TrNcknyU4jJ7&index=3&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
       ),
-      'rating' => '18+',
+      'rating' => 'Não listada oficialmente (violência, sangue, morte)',
       'original_title' => 'Lacey\'s Flash Games',
-      'synopsis' => 'Adaptação interativa da série de analog horror de mesmo nome. A história se passa em meados dos anos 2000, quando a protagonista Charlie, apelidada Charchar887, descobre uma série de jogos Flash sobre uma garota chamada Lacey. Os jogos são repletos de horror e segredos.',
-      'story' => 'Charlie descobre uma série de jogos Flash na internet, todos centrados em uma garota chamada Lacey. Os jogos parecem inocentes no início, mas contêm segredos perturbadores. O jogador deve explorar esse mundo virtual, descobrir o paradeiro de uma das desenvolvedoras, Rocio Yani, e experimentar todos os jogos que contêm Lacey. O conteúdo inclui violência, sugestões de assassinato, sangue, cadáveres e desmembramento. É considerada a obra inaugural do tipo "jogos Flash perdidos", explorando a nostalgia dos jogos online da era Flash e transformando-a em terror.',
+      'synopsis' => 'Adaptação interativa da série de analog horror de mesmo nome. A história se passa em meados dos anos 2000, quando a protagonista Charlie, apelidada Charchar887, descobre uma série de jogos Flash sobre uma garota chamada Lacey. Os jogos são repletos de horror e segredos',
+      'story' => 'Charlie descobre uma série de jogos Flash na internet, todos centrados em uma garota chamada Lacey. Os jogos parecem inocentes no início, mas contêm segredos perturbadores. O jogador deve explorar esse mundo virtual, descobrir o paradeiro de uma das desenvolvedoras, Rocio Yani, e experimentar todos os jogos que contêm Lacey. O conteúdo inclui violência, sugestões de assassinato, sangue, cadáveres e desmembramento. É considerada a obra inaugural do tipo "jogos Flash perdidos", explorando a nostalgia dos jogos online da era Flash e transformando-a em terror',
       'creator_url' => '',
       'tags' => 
       array (
@@ -3415,7 +3645,7 @@ return array (
       'slug' => 'cchippas',
       'title' => 'Chimpy Chippa\'s',
       'category' => 'lostmedia',
-      'tag' => '#lostmedia',
+      'tag' => '#LostMedia',
       'description' => 'Centrada no restaurante familiar falido Chimpy Chippa\'s Family Diner. O animatrônico mascote de macaco, Chimpy, é possuído por uma entidade sinistra. A protagonista Taylor baixa um comercial proibido dos anos 1980.',
       'warning' => 'Conteúdo sensível: animatrônicos, violência, sangue e imagens perturbadoras.',
       'year' => '2023–presente',
@@ -3424,11 +3654,74 @@ return array (
       'image' => '/assets/chimpy.png',
       'episodes' => 
       array (
+        0 => 
+        array (
+          'number' => 1,
+          'title' => 'F5rNTEgJ5VlZM&index=1&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        1 => 
+        array (
+          'number' => 2,
+          'title' => 'NTEgJ5VlZM&index=2&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        2 => 
+        array (
+          'number' => 3,
+          'title' => 'NTEgJ5VlZM&index=3&pp=iAQB0gcJCUcMAYcqIYzv',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        3 => 
+        array (
+          'number' => 4,
+          'title' => 'NTEgJ5VlZM&index=4&pp=iAQB0gcJCUcMAYcqIYzv',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        4 => 
+        array (
+          'number' => 5,
+          'title' => 'NTEgJ5VlZM&index=5&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        5 => 
+        array (
+          'number' => 6,
+          'title' => 'NTEgJ5VlZM&index=6&pp=iAQB0gcJCUcMAYcqIYzv',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        6 => 
+        array (
+          'number' => 7,
+          'title' => 'F5rNTEgJ5VlZM&index=7&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror, violência implícita)',
       'original_title' => 'Chimpy Chippa\'s',
-      'synopsis' => 'Centrada no restaurante familiar falido Chimpy Chippa\'s Family Diner. O animatrônico mascote de macaco, Chimpy, é possuído por uma entidade sinistra. A protagonista Taylor baixa um comercial proibido dos anos 1980.',
-      'story' => 'Taylor baixa um comercial proibido dos anos 1980 do restaurante Chimpy Chippa\'s. No comercial, o dublador gradualmente demonstra medo de Chimpy. A mensagem "preso e faminto" aparece na tela, os olhos de Chimpy brilham em verde e ele ameaça "estou chegando". A entidade então se materializa na casa de Taylor, corta a energia, emite estática distorcida pela linha telefônica e arrasta Taylor para uma dimensão de pesadelo que funde o restaurante com sua casa. O horror vem da combinação de animatrônicos possuídos, comerciais corrompidos e a ideia de que assistir a algo pode convidar uma entidade para dentro de casa.',
+      'synopsis' => 'Centrada no restaurante familiar falido Chimpy Chippa\'s Family Diner. O animatrônico mascote de macaco, Chimpy, é possuído por uma entidade sinistra. A protagonista Taylor baixa um comercial proibido dos anos 1980',
+      'story' => 'Taylor baixa um comercial proibido dos anos 1980 do restaurante Chimpy Chippa\'s. No comercial, o dublador gradualmente demonstra medo de Chimpy. A mensagem "preso e faminto" aparece na tela, os olhos de Chimpy brilham em verde e ele ameaça "estou chegando". A entidade então se materializa na casa de Taylor, corta a energia, emite estática distorcida pela linha telefônica e arrasta Taylor para uma dimensão de pesadelo que funde o restaurante com sua casa. O horror vem da combinação de animatrônicos possuídos, comerciais corrompidos e a ideia de que assistir a algo pode convidar uma entidade para dentro de casa',
       'creator_url' => '',
       'tags' => 
       array (
@@ -3441,7 +3734,7 @@ return array (
       'slug' => 'petscop',
       'title' => 'Petscop',
       'category' => 'lostmedia',
-      'tag' => '#lostmedia',
+      'tag' => '#LostMedia',
       'description' => 'O narrador Paul afirma ter descoberto um jogo de PlayStation 1 de 1997 chamado Petscop entre os pertences de sua família. Seguindo instruções de um bilhete, ele abre uma área oculta — um campo cercado pela escuridão. Conforme explora, descobre que o jogo foi feito para uma pessoa específica e começa a encontrar pistas que apontam para sua própria vida.',
       'warning' => 'Conteúdo sensível: trauma, abuso, violência e horror psicológico.',
       'year' => '2017–2019 (24 vídeos)',
@@ -3450,11 +3743,236 @@ return array (
       'image' => '/assets/petscop.png',
       'episodes' => 
       array (
+        0 => 
+        array (
+          'number' => 1,
+          'title' => 'WqG9Bd&index=1&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        1 => 
+        array (
+          'number' => 2,
+          'title' => 'WqG9Bd&index=2&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        2 => 
+        array (
+          'number' => 3,
+          'title' => 'WqG9Bd&index=2&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        3 => 
+        array (
+          'number' => 4,
+          'title' => 'WqG9Bd&index=4&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        4 => 
+        array (
+          'number' => 5,
+          'title' => 'WqG9Bd&index=5&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        5 => 
+        array (
+          'number' => 6,
+          'title' => 'WqG9Bd&index=6&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        6 => 
+        array (
+          'number' => 7,
+          'title' => 'qG9Bd&index=7&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        7 => 
+        array (
+          'number' => 8,
+          'title' => '0WqG9Bd&index=8&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        8 => 
+        array (
+          'number' => 9,
+          'title' => 'WqG9Bd&index=9&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        9 => 
+        array (
+          'number' => 10,
+          'title' => 'qG9Bd&index=10&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        10 => 
+        array (
+          'number' => 11,
+          'title' => '0WqG9Bd&index=11&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        11 => 
+        array (
+          'number' => 12,
+          'title' => 'WqG9Bd&index=12&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        12 => 
+        array (
+          'number' => 13,
+          'title' => 'WqG9Bd&index=13&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        13 => 
+        array (
+          'number' => 14,
+          'title' => '0WqG9Bd&index=14&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        14 => 
+        array (
+          'number' => 15,
+          'title' => 'WqG9Bd&index=15&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        15 => 
+        array (
+          'number' => 16,
+          'title' => 'J6ZU&list=PLIEbITAtGBebWGyBZQlkiMXwt30WqG9Bd&index=16&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        16 => 
+        array (
+          'number' => 17,
+          'title' => '0WqG9Bd&index=17&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        17 => 
+        array (
+          'number' => 18,
+          'title' => 'AIcnBSXg&list=PLIEbITAtGBebWGyBZQlkiMXwt30WqG9Bd&index=18&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        18 => 
+        array (
+          'number' => 19,
+          'title' => 'qG9Bd&index=19&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        19 => 
+        array (
+          'number' => 20,
+          'title' => 'WqG9Bd&index=20&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        20 => 
+        array (
+          'number' => 21,
+          'title' => '0WqG9Bd&index=21&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        21 => 
+        array (
+          'number' => 22,
+          'title' => 'G9Bd&index=22&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        22 => 
+        array (
+          'number' => 23,
+          'title' => 'nUhmeo87I&list=PLIEbITAtGBebWGyBZQlkiMXwt30WqG9Bd&index=23&pp=iAQB0gcJCU',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        23 => 
+        array (
+          'number' => 24,
+          'title' => 'qG9Bd&index=24&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        24 => 
+        array (
+          'number' => 25,
+          'title' => 'Ngucc&list=PLIEbITAtGBebWGyBZQlkiMXwt30WqG9Bd&index=25&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
       ),
       'rating' => 'MA (temas adultos: abuso infantil, morte, trauma psicológico)',
       'original_title' => 'Petscop',
-      'synopsis' => 'O narrador Paul afirma ter descoberto um jogo de PlayStation 1 de 1997 chamado Petscop entre os pertences de sua família. Seguindo instruções de um bilhete, ele abre uma área oculta — um campo cercado pela escuridão. Conforme explora, descobre que o jogo foi feito para uma pessoa específica e começa a encontrar pistas que apontam para sua própria vida.',
-      'story' => 'Paul encontra o jogo e um bilhete que o instrui a abrir uma área oculta. Ele segue as instruções e encontra um campo cercado pela escuridão. Conforme explora, descobre que o jogo foi criado para uma pessoa específica e começa a encontrar pistas que apontam para sua própria vida. A série aborda temas como sequestro de crianças, abuso, trauma geracional e memória reprimida. A forma de assistir também é um enigma — certos episódios podem ser alinhados com outros, exigindo visualização lado a lado para desbloquear segredos. O jogo parece ser uma forma de comunicação ou memorial de alguém que sofreu trauma, e Paul gradualmente percebe que pode estar conectado à história de forma mais profunda do que imaginava.',
+      'synopsis' => 'O narrador Paul afirma ter descoberto um jogo de PlayStation 1 de 1997 chamado Petscop entre os pertences de sua família. Seguindo instruções de um bilhete, ele abre uma área oculta — um campo cercado pela escuridão. Conforme explora, descobre que o jogo foi feito para uma pessoa específica e começa a encontrar pistas que apontam para sua própria vida',
+      'story' => 'Paul encontra o jogo e um bilhete que o instrui a abrir uma área oculta. Ele segue as instruções e encontra um campo cercado pela escuridão. Conforme explora, descobre que o jogo foi criado para uma pessoa específica e começa a encontrar pistas que apontam para sua própria vida. A série aborda temas como sequestro de crianças, abuso, trauma geracional e memória reprimida. A forma de assistir também é um enigma — certos episódios podem ser alinhados com outros, exigindo visualização lado a lado para desbloquear segredos. O jogo parece ser uma forma de comunicação ou memorial de alguém que sofreu trauma, e Paul gradualmente percebe que pode estar conectado à história de forma mais profunda do que imaginava',
       'creator_url' => '',
       'tags' => 
       array (
@@ -3467,7 +3985,7 @@ return array (
       'slug' => 'waltenfiles',
       'title' => 'The Walten Files',
       'category' => 'lostmedia',
-      'tag' => '#lostmedia',
+      'tag' => '#LostMedia EP1https://www.youtube.com/watch?v=uShQXE1Dla8&list=PLWia0s9fSpRFI8Xt5MVrDqXo YrPwvsube&index=1&pp=iAQB The Walten Files 1 - Company Introductory Tape EP2https://www.youtube.com/watch?v=iTFnNOL4hwg&list=PLWia0s9fSpRFI8Xt5MVrDqXo YrPwvsube&index=2&pp=iAQB The Walten Files 2 - Relocate Project EP3https://www.youtube.com/watch?v=K07tQqEDOfQ&list=PLWia0s9fSpRFI8Xt5MVrDqXo YrPwvsube&index=3&pp=iAQB0gcJCUcMAYcqIYzv Lucky You EP4https://www.youtube.com/watch?v=DBq4eOT_riE&list=PLWia0s9fSpRFI8Xt5MVrDqXoY rPwvsube&index=4&pp=iAQB0gcJCUcMAYcqIYzv Commercial EP5https://www.youtube.com/watch?v=egPO9kUJehU&list=PLWia0s9fSpRFI8Xt5MVrDqXo YrPwvsube&index=5&pp=iAQB The Walten Files 3 - BunnyFarm EP6https://www.youtube.com/watch?v=hDTYwsiz09I&list=PLWia0s9fSpRFI8Xt5MVrDqXoYr Pwvsube&index=6&pp=iAQB Guilty',
       'description' => 'A série usa a estética dos animatrônicos estilo Chuck E. Cheese dos anos 1970 e 1980 e fitas de treinamento corporativo. Conta a história de uma cadeia de restaurantes chamada Bon\'s Burgers, seu fundador Felix Kranken e o desaparecimento misterioso de várias crianças em 1982.',
       'warning' => 'Conteúdo sensível: violência, sangue, morte, animatrônicos e horror corporal.',
       'year' => '2020–presente',
@@ -3476,11 +3994,29 @@ return array (
       'image' => '/assets/thewaltenfiles.jpg',
       'episodes' => 
       array (
+        0 => 
+        array (
+          'number' => 7,
+          'title' => 'n8&list=PLWia0s9fSpRFI8Xt5MVrDqXoYrPwvsube&index=7&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        1 => 
+        array (
+          'number' => 16,
+          'title' => '1h18&list=PLWia0s9fSpRFI8Xt5MVrDqXoYrPwvsube&index=16&pp=iAQB',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
       ),
       'rating' => '16+ (violência intensa, sangue, linguagem forte, uso de drogas)',
       'original_title' => 'The Walten Files',
-      'synopsis' => 'A série usa a estética dos animatrônicos estilo Chuck E. Cheese dos anos 1970 e 1980 e fitas de treinamento corporativo. Conta a história de uma cadeia de restaurantes chamada Bon\'s Burgers, seu fundador Felix Kranken e o desaparecimento misterioso de várias crianças em 1982.',
-      'story' => 'A história começa com os co-fundadores Jack Walten e Felix Kranken. Felix, dirigindo bêbado, causa um acidente fatal enquanto levava os filhos pequenos de Jack, Edd e Molly, para casa após uma festa escolar. As crianças morrem no local. Em pânico e consumido pela culpa, Felix enterra os corpos na Floresta de San Juana e esconde a verdade de Jack. As almas das crianças possuem o boneco vermelho de duas cabeças, Rocket the Sheep. Após o incidente, uma série de eventos horríveis força o restaurante a fechar poucos dias após a inauguração. Jack confronta Felix e depois desaparece misteriosamente — fortemente sugerido que ele foi colocado dentro do boneco principal, Bon. Rosemary, esposa de Jack, vai ao restaurante procurá-lo e é atraída para os fundos por uma versão de Bon com olhos brancos quebrados. Ela é desmembrada e colocada dentro de Sha the Sheep. Susan Woodings, técnica-chefe, é atacada por Bon, que quebra seus membros e a deixa presa dentro de Banny the Rabbit para morrer de fome. Charles, outro funcionário, também é preso dentro de Boozoo. Sophie Walten, filha sobrevivente de Jack, sofre de amnésia severa induzida por medicamentos. Ela joga um fliperama defeituoso chamado BunnyFarm para desbloquear memórias reprimidas, eventualmente testemunhando uma releitura pixelada dos assassinatos de sua família.',
+      'synopsis' => 'A série usa a estética dos animatrônicos estilo Chuck E. Cheese dos anos 1970 e 1980 e fitas de treinamento corporativo. Conta a história de uma cadeia de restaurantes chamada Bon\'s Burgers, seu fundador Felix Kranken e o desaparecimento misterioso de várias crianças em 1982',
+      'story' => 'A história começa com os co-fundadores Jack Walten e Felix Kranken. Felix, dirigindo bêbado, causa um acidente fatal enquanto levava os filhos pequenos de Jack, Edd e Molly, para casa após uma festa escolar. As crianças morrem no local. Em pânico e consumido pela culpa, Felix enterra os corpos na Floresta de San Juana e esconde a verdade de Jack. As almas das crianças possuem o boneco vermelho de duas cabeças, Rocket the Sheep. Após o incidente, uma série de eventos horríveis força o restaurante a fechar poucos dias após a inauguração. Jack confronta Felix e depois desaparece misteriosamente — fortemente sugerido que ele foi colocado dentro do boneco principal, Bon. Rosemary, esposa de Jack, vai ao restaurante procurá-lo e é atraída para os fundos por uma versão de Bon com olhos brancos quebrados. Ela é desmembrada e colocada dentro de Sha the Sheep. Susan Woodings, técnica-chefe, é atacada por Bon, que quebra seus membros e a deixa presa dentro de Banny the Rabbit para morrer de fome. Charles, outro funcionário, também é preso dentro de Boozoo. Sophie Walten, filha sobrevivente de Jack, sofre de amnésia severa induzida por medicamentos. Ela joga um fliperama defeituoso chamado BunnyFarm para desbloquear memórias reprimidas, eventualmente testemunhando uma releitura pixelada dos assassinatos de sua família',
       'creator_url' => '',
       'tags' => 
       array (
@@ -3638,10 +4174,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror, espaços liminares)',
       'original_title' => 'Liminal Land',
-      'synopsis' => 'Série de jogos de analog horror ambientada em um parque de diversões chamado Liminal Land. Inaugurado no início do inverno de 1975 pela empresa CHARON, com o objetivo de superar a Disneylândia. O parque incluía montanhas-russas, parque aquático de vários níveis e uma enorme área residencial suburbana subterrânea.',
-      'story' => 'O parque foi inaugurado pela empresa CHARON com a ambição de se tornar o destino de entretenimento imersivo mais popular dos Estados Unidos. Incluía montanhas-russas, um parque aquático de vários níveis e uma enorme área residencial suburbana subterrânea. Após a inauguração, as vendas de ingressos foram anormalmente altas, apesar de a cidade de Lake Valley ter historicamente uma população escassa. Isso levanta questões sobre como o parque conseguiu atrair tão rapidamente um público tão grande. O horror está nos espaços liminares do parque, na ausência de multidões em um lugar que deveria estar cheio, e na sensação de que algo está profundamente errado com o local.',
+      'synopsis' => 'Série de jogos de analog horror ambientada em um parque de diversões chamado Liminal Land. Inaugurado no início do inverno de 1975 pela empresa CHARON, com o objetivo de superar a Disneylândia. O parque incluía montanhas-russas, parque aquático de vários níveis e uma enorme área residencial suburbana subterrânea',
+      'story' => 'O parque foi inaugurado pela empresa CHARON com a ambição de se tornar o destino de entretenimento imersivo mais popular dos Estados Unidos. Incluía montanhas-russas, um parque aquático de vários níveis e uma enorme área residencial suburbana subterrânea. Após a inauguração, as vendas de ingressos foram anormalmente altas, apesar de a cidade de Lake Valley ter historicamente uma população escassa. Isso levanta questões sobre como o parque conseguiu atrair tão rapidamente um público tão grande. O horror está nos espaços liminares do parque, na ausência de multidões em um lugar que deveria estar cheio, e na sensação de que algo está profundamente errado com o local',
       'creator_url' => '',
       'tags' => 
       array (
@@ -3808,10 +4344,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '18+',
+      'rating' => 'Não listada oficialmente (terror biológico, horror corporal)',
       'original_title' => 'Mystery Flesh Pit National Park',
-      'synopsis' => 'Projeto de terror multimídia ambientado em um mundo onde a região da Bacia do Permiano, no Texas, descobriu no início dos anos 1970 um organismo subterrâneo gigantesco, de escala e origem desconhecidas. Seu interior é cheio de características estranhas e perturbadoras. A empresa Anodyne o desenvolveu como atração turística em 1976.',
-      'story' => 'O organismo gigantesco foi descoberto na Bacia do Permiano. A empresa Anodyne o transformou em atração turística em 1976, e posteriormente o incorporou ao sistema de parques nacionais. Em 2007, o parque foi fechado repentinamente, sem explicação oficial. O projeto inclui ilustrações, textos, uma conta de mídia social in-universe atualizada continuamente e um RPG de mesa financiado coletivamente com sucesso. O horror está no horror corporal — a ideia de estar dentro de um ser vivo de escala incompreensível, cujos órgãos e fluidos podem ser explorados como se fossem atrações turísticas.',
+      'synopsis' => 'Projeto de terror multimídia ambientado em um mundo onde a região da Bacia do Permiano, no Texas, descobriu no início dos anos 1970 um organismo subterrâneo gigantesco, de escala e origem desconhecidas. Seu interior é cheio de características estranhas e perturbadoras. A empresa Anodyne o desenvolveu como atração turística em 1976',
+      'story' => 'O organismo gigantesco foi descoberto na Bacia do Permiano. A empresa Anodyne o transformou em atração turística em 1976, e posteriormente o incorporou ao sistema de parques nacionais. Em 2007, o parque foi fechado repentinamente, sem explicação oficial. O projeto inclui ilustrações, textos, uma conta de mídia social in-universe atualizada continuamente e um RPG de mesa financiado coletivamente com sucesso. O horror está no horror corporal — a ideia de estar dentro de um ser vivo de escala incompreensível, cujos órgãos e fluidos podem ser explorados como se fossem atrações turísticas',
       'creator_url' => '',
       'tags' => 
       array (
@@ -3852,10 +4388,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '12+',
+      'rating' => 'Não listada oficialmente (terror psicológico, espaços liminares)',
       'original_title' => 'The Complex: Found Footage & The Complex: Expedition',
-      'synopsis' => 'Dois jogos desenvolvidos por pgWave, lançados em 2022. O primeiro é apresentado inteiramente através de uma câmera VHS, com ruído de imagem, distorção e iluminação instável. O foco está em corredores de escritório monótonos, lâmpadas fluorescentes zumbindo e ausência de qualquer função social.',
-      'story' => 'No primeiro jogo, o jogador explora espaços liminares com uma câmera VHS. Tudo é apresentado através de ruído, distorção e iluminação instável. O foco está em corredores de escritório monótonos, lâmpadas fluorescentes zumbindo e a ausência de qualquer função social — não há pessoas, não há propósito, apenas espaço vazio e infinito. A sequência, The Complex: Expedition, combina essa premissa com cenários de expedição. Um personagem de uma organização fictícia se perde após uma operação fracassada em espaços com lógica de layout caótica, que se repetem em loop ou cujas escadas levam ao "nada". O horror é puramente psicológico, baseado na desorientação e na ausência de qualquer ponto de referência familiar.',
+      'synopsis' => 'Dois jogos desenvolvidos por pgWave, lançados em 2022. O primeiro é apresentado inteiramente através de uma câmera VHS, com ruído de imagem, distorção e iluminação instável. O foco está em corredores de escritório monótonos, lâmpadas fluorescentes zumbindo e ausência de qualquer função social',
+      'story' => 'No primeiro jogo, o jogador explora espaços liminares com uma câmera VHS. Tudo é apresentado através de ruído, distorção e iluminação instável. O foco está em corredores de escritório monótonos, lâmpadas fluorescentes zumbindo e a ausência de qualquer função social — não há pessoas, não há propósito, apenas espaço vazio e infinito. A sequência, The Complex: Expedition, combina essa premissa com cenários de expedição. Um personagem de uma organização fictícia se perde após uma operação fracassada em espaços com lógica de layout caótica, que se repetem em loop ou cujas escadas levam ao "nada". O horror é puramente psicológico, baseado na desorientação e na ausência de qualquer ponto de referência familiar',
       'creator_url' => '',
       'tags' => 
       array (
@@ -3923,10 +4459,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '12+',
+      'rating' => 'Não listada oficialmente',
       'original_title' => 'The Oldest View',
-      'synopsis' => 'Uma obra que usa o vazio em si como fonte de terror. Grandes espaços interiores começam a parecer sítios arqueológicos. Edifícios comerciais se tornam ruínas. Objetos familiares perdem escala. Memórias parecem estar embutidas nas paredes.',
-      'story' => 'A obra explora a ideia de que espaços familiares podem se tornar irreconhecíveis com o tempo. Grandes espaços interiores começam a parecer sítios arqueológicos, como se tivessem sido abandonados há milhares de anos. Edifícios comerciais se tornam ruínas. Objetos familiares perdem escala e se tornam estranhos. Memórias parecem estar embutidas nas paredes, como se o próprio espaço tivesse absorvido a história daqueles que passaram por ali. Assim como Backrooms, fica na fronteira do analog horror, mas pertence ao mesmo pesadelo da internet.',
+      'synopsis' => 'Uma obra que usa o vazio em si como fonte de terror. Grandes espaços interiores começam a parecer sítios arqueológicos. Edifícios comerciais se tornam ruínas. Objetos familiares perdem escala. Memórias parecem estar embutidas nas paredes',
+      'story' => 'A obra explora a ideia de que espaços familiares podem se tornar irreconhecíveis com o tempo. Grandes espaços interiores começam a parecer sítios arqueológicos, como se tivessem sido abandonados há milhares de anos. Edifícios comerciais se tornam ruínas. Objetos familiares perdem escala e se tornam estranhos. Memórias parecem estar embutidas nas paredes, como se o próprio espaço tivesse absorvido a história daqueles que passaram por ali. Assim como Backrooms, fica na fronteira do analog horror, mas pertence ao mesmo pesadelo da internet',
       'creator_url' => '',
       'tags' => 
       array (
@@ -4066,10 +4602,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror psicológico, imagens perturbadoras)',
       'original_title' => 'Kraina Grzybów TV',
-      'synopsis' => 'Série polonesa que distorce a nostalgia de programas infantis de TV da era comunista, criando uma atmosfera única de desconforto. O título significa "Terra dos Cogumelos TV".',
-      'story' => 'A série pega programas infantis da era comunista polonesa e os distorce de formas sutis e perturbadoras. Cores vibrantes se tornam doentias, personagens familiares agem de forma estranha, e há uma sensação constante de que algo está errado por baixo da superfície. O horror vem da corrupção de memórias de infância e da transformação de algo que deveria ser inocente em algo profundamente inquietante.',
+      'synopsis' => 'Série polonesa que distorce a nostalgia de programas infantis de TV da era comunista, criando uma atmosfera única de desconforto. O título significa "Terra dos Cogumelos TV"',
+      'story' => 'A série pega programas infantis da era comunista polonesa e os distorce de formas sutis e perturbadoras. Cores vibrantes se tornam doentias, personagens familiares agem de forma estranha, e há uma sensação constante de que algo está errado por baixo da superfície. O horror vem da corrupção de memórias de infância e da transformação de algo que deveria ser inocente em algo profundamente inquietante',
       'creator_url' => '',
       'tags' => 
       array (
@@ -4272,10 +4808,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror, imagens perturbadoras)',
       'original_title' => 'Harmony & Horror',
-      'synopsis' => 'Série que corrompe a nostalgia de programas infantis e músicas dos anos 1980 e 1990, transformando lembranças familiares em fontes de terror.',
-      'story' => 'A série pega programas infantis e músicas nostálgicas dos anos 1980 e 1990 e as corrompe. Canções alegres se tornam assustadoras, personagens queridos se tornam sinistros, e a sensação de familiaridade é substituída por uma sensação de ameaça. O horror está na subversão da nostalgia — algo que deveria trazer conforto se torna uma fonte de medo.',
+      'synopsis' => 'Série que corrompe a nostalgia de programas infantis e músicas dos anos 1980 e 1990, transformando lembranças familiares em fontes de terror',
+      'story' => 'A série pega programas infantis e músicas nostálgicas dos anos 1980 e 1990 e as corrompe. Canções alegres se tornam assustadoras, personagens queridos se tornam sinistros, e a sensação de familiaridade é substituída por uma sensação de ameaça. O horror está na subversão da nostalgia — algo que deveria trazer conforto se torna uma fonte de medo',
       'creator_url' => '',
       'tags' => 
       array (
@@ -4433,10 +4969,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror, imagens perturbadoras)',
       'original_title' => 'Sneaky Snack Bar',
-      'synopsis' => 'Série que usa a nostalgia de comerciais de fast-food para criar terror, distorcendo anúncios familiares em algo sinistro.',
-      'story' => 'Comerciais de fast-food que parecem familiares e nostálgicos são distorcidos de formas sutis e perturbadoras. O que deveria ser um anúncio alegre se torna algo ameaçador, com cores erradas, sons distorcidos e mensagens subliminares. O horror vem da corrupção de algo tão banal quanto um comercial de lanchonete.',
+      'synopsis' => 'Série que usa a nostalgia de comerciais de fast-food para criar terror, distorcendo anúncios familiares em algo sinistro',
+      'story' => 'Comerciais de fast-food que parecem familiares e nostálgicos são distorcidos de formas sutis e perturbadoras. O que deveria ser um anúncio alegre se torna algo ameaçador, com cores erradas, sons distorcidos e mensagens subliminares. O horror vem da corrupção de algo tão banal quanto um comercial de lanchonete',
       'creator_url' => '',
       'tags' => 
       array (
@@ -4449,7 +4985,7 @@ return array (
       'slug' => 'vitacarnis',
       'title' => 'Vita Carnis',
       'category' => 'animais',
-      'tag' => '#AnimaisNaturezaCorrompidos',
+      'tag' => '#AnimaisNaturezaCorrompidos EP1 URL: https://www.youtube.com/watch?v=xNc-jv3d2o0 Título: Vita Carnis - Living Meat Research Documentary 1 - Intro and The Crawl EP2 URL: https://www.youtube.com/watch?v=1vK0rZm4dyk Título: Vita Carnis - Documentário de Pesquisa sobre Carne Viva 2 - Guarnições EP3 URL: https://www.youtube.com/watch?v=gsd389jrF8k Título: Vita Carnis - Documentário de Pesquisa sobre Carne Viva 3 - Cobras de Carne EP4 URL: https://www.youtube.com/watch?v=BPf2hFSwpOs Título: Vita Carnis - Documentário de Pesquisa sobre Carne Viva 4 - Mimics EP5 URL: https://www.youtube.com/watch?v=SKtqHjc7pk4 Título: Vita Carnis - Documentário de Pesquisa sobre Carne Viva 5 - Colheitadeiras EP6 URL: https://www.youtube.com/watch?v=BhMynyenovI Título: Vita Carnis - Documentário de Pesquisa sobre Carne Viva 6 - Host of Influence EP7 URL: https://www.youtube.com/watch?v=UAjvjsVOnXs Título: Vita Carnis - Documentário de Pesquisa sobre Carne Viva 7 - Monólitos EP8 URL: https://www.youtube.com/watch?v=nIuJVtXYEHU Título: Vita Carnis - Living Meat Research Documentary - Full Footage EP9 URL: https://www.youtube.com/watch?v=Hq_4mbHmvB4 Título: Vita Carnis - Cozinha em casa - Penne com queijo e acompanhamentos para cozinhar EP10 URL: https://www.youtube.com/watch?v=YjOvqpr0big Título: Vita Carnis - Guia para ter um animal de estimação Tosa EP11 URL: https://www.youtube.com/watch?v=2IXYjkjjYcY Título: Vita Carnis - MeatSnakeSpecimen - Archived Footage EP12 URL: https://www.youtube.com/watch?v=wZmRconBlak Título: Vita Carnis - Species Anomaly Report EP13 URL: https://www.youtube.com/watch?v=8uvzVMteqgc Título: Vita Carnis - Comercial de Intensificador de Sabor EP14 URL: https://www.youtube.com/watch?v=D6rBcBTvEcw Título: Tape - UncoveredDocuments EP15 URL: https://www.youtube.com/watch?v=gWR7ETm1GuI Título: Vida da Carne - Mensagem EP16 URL: https://www.youtube.com/watch?v=QhVk8OK1T-k Título: Vita Carnis - Facility-0',
       'description' => 'Ambientada em uma Terra alternativa, onde organismos misteriosos chamados Crawl surgiram na década de 1930. A série, apresentada em formato de documentário científico, detalha a anatomia e o comportamento dessas criaturas: os inofensivos Trimmings, os predadores Mimics que imitam humanos, e os gigantescos Monoliths.',
       'warning' => 'Conteúdo sensível: horror biológico, sangue, criaturas e imagens perturbadoras.',
       'year' => '2022–presente',
@@ -4461,8 +4997,8 @@ return array (
       ),
       'rating' => 'TV-MA (terror corporal, violência biológica)',
       'original_title' => 'Vita Carnis',
-      'synopsis' => 'Ambientada em uma Terra alternativa, onde organismos misteriosos chamados Crawl surgiram na década de 1930. A série, apresentada em formato de documentário científico, detalha a anatomia e o comportamento dessas criaturas: os inofensivos Trimmings, os predadores Mimics que imitam humanos, e os gigantescos Monoliths.',
-      'story' => 'O Crawl (Scandere Carnis) é uma entidade semelhante a um fungo que se fixa em superfícies sólidas como edifícios. Parece raízes vermelhas de sangue, é extremamente resistente ao clima, nutritivo, melhora o solo e é a principal fonte de reprodução das criaturas Carnis. A partir dos nódulos do Crawl, desenvolvem-se várias criaturas. Os Trimmings parecem híbridos de caranguejo e toupeira, principalmente necrófagos, considerados basicamente inofensivos e até mantidos como animais de estimação. As Meat Snakes são serpentes carnívoras que se alimentam de mortos, usam crânios de vítimas como máscaras e se reproduzem por mitose ao atingir certo tamanho. Os Mimics são entidades humanoides canibais, altamente inteligentes, que se disfarçam de humanos ou se escondem em móveis para emboscar vítimas. Quanto mais humanos consomem, mais se integram à espécie humana, mas sempre há falhas. Após consumo excessivo de carne humana, tornam-se mais altos e resistentes, transformando-se em Elder Mimics — predadores de topo do mundo. Os Harvesters são massas de carne enterradas que emboscam vítimas com raízes e injetam toxinas. Os Hosts of Influence são entidades humanoides cujos espinhos nas costas liberam esporos laranja que hipnotizam temporariamente animais para que se aproximem. Os Monoliths têm 120 metros de altura, enraízam-se em formações circulares, são imunes à dor, inofensivos, mas perigosos de se aproximar, e existem apenas 7 no mundo. As Singularities são subespécies poderosas que interferem em sinais elétricos, existem em número de 7, possivelmente são os núcleos em torno dos quais os Monoliths se agrupam, transformam cadáveres em Crawl e sugerem ser os criadores de toda a espécie Carnis.',
+      'synopsis' => 'Ambientada em uma Terra alternativa, onde organismos misteriosos chamados Crawl surgiram na década de 1930. A série, apresentada em formato de documentário científico, detalha a anatomia e o comportamento dessas criaturas: os inofensivos Trimmings, os predadores Mimics que imitam humanos, e os gigantescos Monoliths',
+      'story' => 'O Crawl (Scandere Carnis) é uma entidade semelhante a um fungo que se fixa em superfícies sólidas como edifícios. Parece raízes vermelhas de sangue, é extremamente resistente ao clima, nutritivo, melhora o solo e é a principal fonte de reprodução das criaturas Carnis. A partir dos nódulos do Crawl, desenvolvem-se várias criaturas. Os Trimmings parecem híbridos de caranguejo e toupeira, principalmente necrófagos, considerados basicamente inofensivos e até mantidos como animais de estimação. As Meat Snakes são serpentes carnívoras que se alimentam de mortos, usam crânios de vítimas como máscaras e se reproduzem por mitose ao atingir certo tamanho. Os Mimics são entidades humanoides canibais, altamente inteligentes, que se disfarçam de humanos ou se escondem em móveis para emboscar vítimas. Quanto mais humanos consomem, mais se integram à espécie humana, mas sempre há falhas. Após consumo excessivo de carne humana, tornam-se mais altos e resistentes, transformando-se em Elder Mimics — predadores de topo do mundo. Os Harvesters são massas de carne enterradas que emboscam vítimas com raízes e injetam toxinas. Os Hosts of Influence são entidades humanoides cujos espinhos nas costas liberam esporos laranja que hipnotizam temporariamente animais para que se aproximem. Os Monoliths têm 120 metros de altura, enraízam-se em formações circulares, são imunes à dor, inofensivos, mas perigosos de se aproximar, e existem apenas 7 no mundo. As Singularities são subespécies poderosas que interferem em sinais elétricos, existem em número de 7, possivelmente são os núcleos em torno dos quais os Monoliths se agrupam, transformam cadáveres em Crawl e sugerem ser os criadores de toda a espécie Carnis',
       'creator_url' => '',
       'tags' => 
       array (
@@ -4475,7 +5011,7 @@ return array (
       'slug' => 'roforest',
       'title' => 'Rockwell Forest',
       'category' => 'animais',
-      'tag' => '#AnimaisNaturezaCorrompidos',
+      'tag' => '#AnimaisNaturezaCorrompidos EP1 URL: https://www.youtube.com/watch?v=DHbaellT2VM Título: RockwellForest: My introduction.mp4 EP2 URL: https://www.youtube.com/watch?v=jSneGbwUVX8 Título: RockwellForest: MyOwnCartoonMovie.mp4 EP3 URL: https://www.youtube.com/watch?v=QANiXtFYR0M Título: RockwellForest: Neighborhood Watch Guide.mp4 EP4 URL: https://www.youtube.com/watch?v=xxwov3oiB4s Título: RockwellForest: NightWatcher.mp4 EP5 URL: https://www.youtube.com/watch?v=P6JPXCXtnD4 Título: RockwellForest: Update.mp4 EP6 URL: https://www.youtube.com/watch?v=r7MNHVJhAtw Título: RockwellForest: HomeAlone.mp4 EP7 URL: https://www.youtube.com/watch?v=kNsVnn0zlbQ Título: RockwellForest: BodyCamFootage.mp4 EP8 URL: https://www.youtube.com/watch?v=xHOesjW1vI0 Título: RockwellForest: NightSeeker.mp4 EP9 URL: https://www.youtube.com/watch?v=3UASy29msJs Título: RockwellForest: Sleep.mp4 EP10 URL: https://www.youtube.com/watch?v=eRdUdGalRYM Título: RockwellForest: Plan.mp4 EP11 URL: https://www.youtube.com/watch?v=9-GRWUZKTbU Título: RockwellForest: Camera.mp4 EP12 URL: https://www.youtube.com/watch?v=ceMIDgpW7a4 Título: RockwellForest: Drawing.mp4 EP13 URL: https://www.youtube.com/watch?v=rFX5FfG1_xA Título: RockwellForest: Faces.mp4 EP14 URL: https://www.youtube.com/watch?v=Z_RpZ7ivsT0 Título: RockwellForest: Question.mp4 EP15 URL: https://www.youtube.com/watch?v=Mhkrn2JP9oA Título: RockwellForest: Radio Show.mp4 EP16 URL: https://www.youtube.com/watch?v=LbJQYLHES9I Título: RockwellForest: I Did it.mp4 EP17 URL: https://www.youtube.com/watch?v=kGetItHAH34 Título: RockwellForest: Watchful Eye.mp4 EP18 URL: https://www.youtube.com/watch?v=K36TiFB9Yk0 Título: RockwellForest: Naïve.mp4 EP19 URL: https://www.youtube.com/watch?v=Hmara8OkBtE Título: RockwellForest: Answers.mp4 EP20 URL: https://www.youtube.com/watch?v=3ntwhK68eGA Título: RockwellForest: Looking.mp4 EP21 URL: https://www.youtube.com/watch?v=ArLNC0dRtFI Título: RockwellForest: Message.mp4 EP22 URL: https://www.youtube.com/watch?v=dtNiKtTskSU Título: RockwellForest: Soon.mp4 EP23 URL: https://www.youtube.com/watch?v=WQMhgpnjlQI Título: RockwellForest: A Problem.mp4 EP24 URL: https://www.youtube.com/watch?v=8LNAh0fxmKA Título: RockwellForest: I see you.mp4 EP25 URL: https://www.youtube.com/watch?v=IO4KdHUm8eE Título: Doors EP26 URL: https://www.youtube.com/watch?v=aKXY8Ddu6Mc Título: RockwellForest: See you Soon.mp4 EP27 URL: https://www.youtube.com/watch?v=1Qn_IovcBJE Título: RockwellForest: 5.mp4 EP28 URL: https://www.youtube.com/watch?v=I3UWY0ELPh4 Título: RockwellForest: 4.mp4 EP29 URL: https://www.youtube.com/watch?v=eLquxJkHKnc Título: RockwellForest: 3.mp4 EP30 URL: https://www.youtube.com/watch?v=dNSetPgNPqU Título: RockwellForest: 2.mp4 EP31 URL: https://www.youtube.com/watch?v=7VoiJ8mMBiA Título: RockwellForest: 1.mp4 EP32 URL: https://www.youtube.com/watch?v=dPIkYD-RAo8 Título: Scream EP33 URL: https://www.youtube.com/watch?v=lHza7ME_cCU Título: RockwellForest: I’m Safe.mp4 EP34 URL: https://www.youtube.com/watch?v=BPYgImMwmIo Título: RockwellForest: Sherry the Adventurous ep 1.mp4 EP35 URL: https://www.youtube.com/watch?v=Imka46fAVT0 Título: RockwellForest: Sherry the Adventurous ep 2.mp4 EP36 URL: https://www.youtube.com/watch?v=nbFDpMcoY2M Título: RockwellForest: Sherry the Adventurous ep 3.mp4 EP37 URL: https://www.youtube.com/watch?v=_Qb4AW_qIw4 Título: RockwellForest: Sherry the Adventurous is Canceled.mp4 EP38 URL: https://www.youtube.com/watch?v=xslqRDViUzM Título: RockwellForest: Disfigurement.mp4 EP39 URL: https://www.youtube.com/watch?v=eyB0diNOGkA Título: RockwellForest: Judgement.mp4 JOGOS E MÍDIA INTERATIVA CORROMPIDOS',
       'description' => 'Série de analog horror ambientada em uma floresta fictícia, envolvendo anomalias e criaturas desconhecidas. A trama gira em torno de desaparecimentos e fenômenos inexplicáveis na região.',
       'warning' => 'Conteúdo sensível: criaturas, violência, desaparecimentos e imagens perturbadoras.',
       'year' => 'Não listado nos resultados',
@@ -4485,10 +5021,10 @@ return array (
       'episodes' => 
       array (
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente',
       'original_title' => 'Rockwell Forest',
-      'synopsis' => 'Série de analog horror ambientada em uma floresta fictícia, envolvendo anomalias e criaturas desconhecidas. A trama gira em torno de desaparecimentos e fenômenos inexplicáveis na região.',
-      'story' => 'A floresta de Rockwell é palco de desaparecimentos misteriosos e fenômenos inexplicáveis. Criaturas desconhecidas habitam a região, e aqueles que entram raramente retornam. A série explora o medo do desconhecido na natureza e a ideia de que existem lugares que não deveriam ser explorados.',
+      'synopsis' => 'Série de analog horror ambientada em uma floresta fictícia, envolvendo anomalias e criaturas desconhecidas. A trama gira em torno de desaparecimentos e fenômenos inexplicáveis na região',
+      'story' => 'A floresta de Rockwell é palco de desaparecimentos misteriosos e fenômenos inexplicáveis. Criaturas desconhecidas habitam a região, e aqueles que entram raramente retornam. A série explora o medo do desconhecido na natureza e a ideia de que existem lugares que não deveriam ser explorados',
       'creator_url' => '',
       'tags' => 
       array (
@@ -4637,10 +5173,10 @@ return array (
           'description' => '',
         ),
       ),
-      'rating' => '12+',
+      'rating' => 'Não listada oficialmente (terror, imagens perturbadoras)',
       'original_title' => 'Super Mario 64: CLASSIFIED',
-      'synopsis' => 'Analog horror de arquivos e mídia classificados baseado em Super Mario 64. A série explora versões corrompidas e anômalas do jogo clássico da Nintendo.',
-      'story' => 'A série apresenta arquivos "classificados" que revelam versões corrompidas e anômalas de Super Mario 64. O jogo familiar se torna algo sinistro, com personagens agindo de forma estranha, níveis que não deveriam existir e mensagens ocultas. O horror vem da corrupção de uma infância nostálgica e da ideia de que até mesmo os jogos mais inocentes podem esconder segredos sombrios.',
+      'synopsis' => 'Analog horror de arquivos e mídia classificados baseado em Super Mario 64. A série explora versões corrompidas e anômalas do jogo clássico da Nintendo',
+      'story' => 'A série apresenta arquivos "classificados" que revelam versões corrompidas e anômalas de Super Mario 64. O jogo familiar se torna algo sinistro, com personagens agindo de forma estranha, níveis que não deveriam existir e mensagens ocultas. O horror vem da corrupção de uma infância nostálgica e da ideia de que até mesmo os jogos mais inocentes podem esconder segredos sombrios',
       'creator_url' => '',
       'tags' => 
       array (
@@ -4653,7 +5189,7 @@ return array (
       'slug' => 'tmk',
       'title' => 'TMK / Too Much Kirby',
       'category' => 'jogos',
-      'tag' => '#JogosMídiaInterativaCorrompidos',
+      'tag' => '#JogosMídiaInterativaCorrompidos EP1 URL: https://www.youtube.com/watch?v=6ey0FRQEzM4 Título: TMK. Jason EP2 URL: https://www.youtube.com/watch?v=gp5-_XkJNOI Título: Too Much Kirby Season 1 Ep 1: Kirby.MP4 EP3 URL: https://www.youtube.com/watch?v=FzkFboWqYT4 Título: Too Much Kirby Season 1 Ep 2: Kirby Test. Room EP4 URL: https://www.youtube.com/watch?v=0aPL6cL51wk Título: Too Much Kirby Season 1 Ep 3: Project: Super Kirby Bug Report// TMK.EXE EP5 URL: https://www.youtube.com/watch?v=Q-eFb7YR_QI Título: Too Much Kirby Season 1 Ep 4: Kirby Sound Test , EP6 URL: https://www.youtube.com/watch?v=BODWEAusX_0 Título: Too Much Kirby Season 1 Ep 5: Project: Super Kirby Bug Report 2// TMK.EXE EP7 URL: https://www.youtube.com/watch?v=v9yMBE5HbIE Título: Too Much Kirby Season 1 Ep 5: (Reupload) Project: Super Kirby Bug Report 2// TMK.EXE EP8 URL: https://www.youtube.com/watch?v=PTo_Rvn0zeQ Título: Too Much Kirby Season 1 Ep 6: Kirby Super Star Gameplay: Green Greens EP9 URL: https://www.youtube.com/watch?v=7dwxIn2qmVI Título: Too Much Kirby Season 1 Ep 7: Kirby// The Truth will come out EP10 URL: https://www.youtube.com/watch?v=Otkc6zT-Hrs Título: Kirby Super Star Victim 1 (TMK Season 2 Teaser) EP11 URL: https://www.youtube.com/watch?v=ZPq1FnNDgZk Título: Kirby Super Star Spring Breeze - Damage 100% Walkthrough EP12 URL: https://www.youtube.com/watch?v=tC3rxLwS1iA Título: Too Much Kirby Season 2 Ep 1: Super Kirby Bug Reporter 1 EP13 URL: https://www.youtube.com/watch?v=cdO6MDpo_oY Título: Too Much Kirby Season 2 Ep 2: Symptom 1 hallucinations EP14 URL: https://www.youtube.com/watch?v=Rq_O70ChsQ0 Título: Too Much Kirby Season 2 Ep 3: Kirby Super Star Beta Tester 1// Final Moments EP15 URL: https://www.youtube.com/watch?v=d0h6UgSVwA4 Título: Too Much Kirby Season 2 Ep 4: Kirby Guide Rooms EP16 URL: https://www.youtube.com/watch?v=n3D8aPwhFYs Título: Too Much Kirby Season 2 Ep 5: Rule Number Three EP17 URL: https://www.youtube.com/watch?v=1YmJ_ZTQ0ag Título: Too Much Kirby Season 2 Ep 6: Termination EP18 URL: https://www.youtube.com/watch?v=daffr_Xhfcs Título: Too Much Kirby Season 2 Ep 7: Donny vs Marx (Part 1) EP19 URL: https://www.youtube.com/watch?v=cL_BiNHW0oY Título: Marx. EP20 URL: https://www.youtube.com/watch?v=48uJKjXmYv8 Título: Too Much Kirby Season 2 Ep 8: Donny vs Marx (Part 2) EP21 URL: https://www.youtube.com/watch?v=Iv9Cg5z37vU Título: Too Much Kirby Season 3 Ep 1: Kirby\'s Adventure (NES) EP22 URL: https://www.youtube.com/watch?v=QXzIzYYLJ9w Título: Too Much Kirby Season 3 Ep 2: Kirby\'s Dream Land Green Greens EP23 URL: https://www.youtube.com/watch?v=Ci8JmI4nDBM Título: Too Much Kirby Season 3 Ep 3: Kirby.MP4? EP24 URL: https://www.youtube.com/watch?v=mgSLPs1-bX0 Título: Too Much Kirby Season 3 Ep 4: Marx\'s Soul EP25 URL: https://www.youtube.com/watch?v=3vsPZydYWIc Título: Too Much Kirby Season 3 Ep 5: Donny\'s memories EP26 URL: https://www.youtube.com/watch?v=zztTYkZY84c Título: Too Much Kirby Season 3: Donny\'s false memories',
       'description' => 'Analog horror baseado na série Kirby, explorando versões distorcidas e perturbadoras do universo dos jogos da Nintendo.',
       'warning' => 'Conteúdo sensível: horror psicológico, ameaça e imagens perturbadoras.',
       'year' => '2021–presente',
@@ -4663,10 +5199,10 @@ return array (
       'episodes' => 
       array (
       ),
-      'rating' => '12+',
+      'rating' => 'Não listada oficialmente (terror, imagens perturbadoras)',
       'original_title' => 'TMK / Too Much Kirby',
-      'synopsis' => 'Analog horror baseado na série Kirby, explorando versões distorcidas e perturbadoras do universo dos jogos da Nintendo.',
-      'story' => 'O universo alegre e colorido de Kirby é distorcido em algo perturbador. Personagens que deveriam ser fofos se tornam assustadores, e a mecânica de "engolir" do Kirby é reinterpretada de forma sinistra. O horror está na subversão de uma franquia conhecida por sua inocência.',
+      'synopsis' => 'Analog horror baseado na série Kirby, explorando versões distorcidas e perturbadoras do universo dos jogos da Nintendo',
+      'story' => 'O universo alegre e colorido de Kirby é distorcido em algo perturbador. Personagens que deveriam ser fofos se tornam assustadores, e a mecânica de "engolir" do Kirby é reinterpretada de forma sinistra. O horror está na subversão de uma franquia conhecida por sua inocência',
       'creator_url' => '',
       'tags' => 
       array (
@@ -4679,7 +5215,7 @@ return array (
       'slug' => 'ndm0use',
       'title' => 'Needlem0use',
       'category' => 'jogos',
-      'tag' => '#JogosMídiaInterativaCorrompidos',
+      'tag' => '#JogosMídiaInterativaCorrompidos EP1 URL: https://www.youtube.com/watch?v=yVy3NaDA8KA Título: Needlemouse Vhs season 1: Needle0use (episode 1) EP2 URL: https://www.youtube.com/watch?v=itd1i6d8ens Título: Needlemouse Vhs temporada 1: c0mings00n.mp4 (episódio 2) EP3 URL: https://www.youtube.com/watch?v=QYe-0uQ2wyk Título: Needlemouse Vhs season 1: G0t Y0u (episode 3) EP4 URL: https://www.youtube.com/watch?v=UL8X1uK6Vtw Título: Needlemouse Vhs season 1: n0way (episode 4) EP5 URL: https://www.youtube.com/watch?v=Iifc-N4k6qE Título: Needlemouse VHS temporada 1 (teaser do episódio final) EP6 URL: https://www.youtube.com/watch?v=siIqnC4P3ms Título: Needlemouse VHS temporada 1: final (episódio 5, episódio final) EP7 URL: https://www.youtube.com/watch?v=VGQ563ZdzzU Título: Needlemouse VHS temporada 2: 2008 (abertura da 2ª temporada) EP8 URL: https://www.youtube.com/watch?v=wYwJVyVg9lk Título: Needlemouse Vhs season 2: SpeeDuo64 presents Sonic comp beta!!! (episode 1) EP9 URL: https://www.youtube.com/watch?v=bF7mZWTG6Ok Título: Needlemouse Vhs season 2: duo (episode 3) EP10 URL: https://www.youtube.com/watch?v=bF7mZWTG6Ok Título: Needlemouse Vhs season 2: duo (episode 3) EP11 URL: https://www.youtube.com/watch?v=iNsarUZ9de0 Título: Needlemouse Vhs season 2: confronting (episode 4) EP12 URL: https://www.youtube.com/watch?v=GKBOBIqyqtA Título: Needlemouse Vhs season 2: yourself (episode 5) EP13 URL: https://www.youtube.com/watch?v=homl5mgO1Bs Título: Needlemouse Vhs season 2: atem (episode 6 final episode)',
       'description' => 'Analog horror de mídia e jogo perdido derivado da série Sonic. A série explora uma versão corrompida e assombrada do universo do ouriço azul.',
       'warning' => 'Conteúdo sensível: violência, horror psicológico, sangue e imagens perturbadoras.',
       'year' => '2021–presente',
@@ -4689,10 +5225,10 @@ return array (
       'episodes' => 
       array (
       ),
-      'rating' => '14+',
+      'rating' => 'Não listada oficialmente (terror, violência implícita)',
       'original_title' => 'Needlem0use',
-      'synopsis' => 'Analog horror de mídia e jogo perdido derivado da série Sonic. A série explora uma versão corrompida e assombrada do universo do ouriço azul.',
-      'story' => 'Uma versão corrompida do universo de Sonic é apresentada como uma mídia perdida. O jogo familiar se torna uma experiência assombrada, com o ouriço azul e seus amigos transformados em versões distorcidas e ameaçadoras. O horror vem da corrupção de uma franquia icônica e da ideia de que algo terrível pode estar escondido em um jogo aparentemente normal.',
+      'synopsis' => 'Analog horror de mídia e jogo perdido derivado da série Sonic. A série explora uma versão corrompida e assombrada do universo do ouriço azul',
+      'story' => 'Uma versão corrompida do universo de Sonic é apresentada como uma mídia perdida. O jogo familiar se torna uma experiência assombrada, com o ouriço azul e seus amigos transformados em versões distorcidas e ameaçadoras. O horror vem da corrupção de uma franquia icônica e da ideia de que algo terrível pode estar escondido em um jogo aparentemente normal',
       'creator_url' => '',
       'tags' => 
       array (
@@ -4710,7 +5246,7 @@ return array (
       'warning' => 'Conteúdo sensível: perseguição, violência, morte e horror psicológico.',
       'year' => '2009–2014',
       'status' => 'Concluída',
-      'creator' => 'Troy Wagner e Joseph DeLage https://www.youtube.com/@MarbleHornets',
+      'creator' => 'Troy Wagner e Joseph DeLage',
       'image' => '/assets/marblehornets.png',
       'episodes' => 
       array (
@@ -5545,9 +6081,9 @@ return array (
       ),
       'rating' => 'TV-MA (terror psicológico, violência, morte)',
       'original_title' => 'Marble Hornets',
-      'synopsis' => 'Websérie que segue Jay, um estudante que tenta descobrir o que aconteceu com o projeto de filme inacabado de seu amigo Alex. Enquanto assiste às fitas, Jay percebe que ele e Alex estão sendo perseguidos por uma entidade conhecida como The Operator, o Slender Man. A série é considerada um dos precursores do analog horror, estabelecendo o formato de filmagem encontrada de baixa qualidade e narrativa fragmentada que depende da participação dos fãs.',
-      'story' => 'Alex começa a filmar seu projeto estudantil, mas logo começa a apresentar comportamento errático. Ele abandona o projeto e entrega as fitas a Jay, pedindo que ele as queime. Anos depois, Jay começa a assistir e digitalizar as fitas, percebendo que nem todo o conteúdo é do filme — Alex havia começado a filmar a si mesmo, cada vez mais paranoico com algo que o perseguia. Esse algo é o Operator, uma entidade alta e sem rosto. A exposição ao Operator causa uma doença de tosse violenta. Jay logo se torna paranoico também, gravando a si mesmo da mesma forma que Alex, pois a mesma coisa começa a segui-lo. Tim Wright, ex-ator do filme de Alex, e Jessica Locke são arrastados para o mistério. Um canal anônimo chamado Totheark publica vídeos enigmáticos em resposta. Brian, inicialmente visto como uma figura encapuzada hostil, na verdade auxilia contra Alex. Alex eventualmente é morto por Tim, que perfura sua garganta, e seu corpo é levado pelo Operator. Tim e Jessica são os únicos sobreviventes confirmados. A série termina com Tim dirigindo sozinho, tossindo, a tela distorcendo e um cartão de texto aparecendo: Everything is fine.',
-      'creator_url' => '',
+      'synopsis' => 'Websérie que segue Jay, um estudante que tenta descobrir o que aconteceu com o projeto de filme inacabado de seu amigo Alex. Enquanto assiste às fitas, Jay percebe que ele e Alex estão sendo perseguidos por uma entidade conhecida como The Operator, o Slender Man. A série é considerada um dos precursores do analog horror, estabelecendo o formato de filmagem encontrada de baixa qualidade e narrativa fragmentada que depende da participação dos fãs',
+      'story' => 'Alex começa a filmar seu projeto estudantil, mas logo começa a apresentar comportamento errático. Ele abandona o projeto e entrega as fitas a Jay, pedindo que ele as queime. Anos depois, Jay começa a assistir e digitalizar as fitas, percebendo que nem todo o conteúdo é do filme — Alex havia começado a filmar a si mesmo, cada vez mais paranoico com algo que o perseguia. Esse algo é o Operator, uma entidade alta e sem rosto. A exposição ao Operator causa uma doença de tosse violenta. Jay logo se torna paranoico também, gravando a si mesmo da mesma forma que Alex, pois a mesma coisa começa a segui-lo. Tim Wright, ex-ator do filme de Alex, e Jessica Locke são arrastados para o mistério. Um canal anônimo chamado Totheark publica vídeos enigmáticos em resposta. Brian, inicialmente visto como uma figura encapuzada hostil, na verdade auxilia contra Alex. Alex eventualmente é morto por Tim, que perfura sua garganta, e seu corpo é levado pelo Operator. Tim e Jessica são os únicos sobreviventes confirmados. A série termina com Tim dirigindo sozinho, tossindo, a tela distorcendo e um cartão de texto aparecendo: Everything is fine',
+      'creator_url' => 'https://www.youtube.com/@MarbleHornets',
       'tags' => 
       array (
         0 => '#foundfootage',
@@ -5558,24 +6094,96 @@ return array (
       'id' => 34,
       'slug' => 'magnitoshakhtinskaia',
       'title' => 'Magnitoshakhtinskaia Oblast',
-      'category' => 'bcasthijacks',
-      'tag' => '#bcasthijacks',
+      'category' => 'easscenarios',
+      'tag' => '#EASScenarios',
       'description' => 'Uma série russa de analog horror ambientada em um assunto federal fictício da Rússia chamado Magnitoshakhtinskaia Oblast. A região é coberta de neve, repleta de ruínas industriais enferrujadas e habitada por criaturas anômalas que desafiam a lógica humana. Os residentes são protegidos pelo Ministério de Situações de Emergência (МЧС) e sua Formação Anti-Acratiana. O diferencial da obra é que o anormal é tratado como parte da vida cotidiana: os monstros não são segredos, mas ameaças gerenciadas abertamente pelo governo, que divulga vídeos de orientação à população.',
       'warning' => 'Conteúdo sensível: horror, criaturas ameaçadoras, violência e imagens perturbadoras.',
       'rating' => 'TV-14 (terror, ataques de monstros, infecção parasitária, terror psicológicico)',
       'year' => '~ 2023',
-      'status' => 'Em andamento.',
-      'creator' => 'Магнитошахтинская область https://www.youtube.com/@Magnitoshakhtinskaia_oblast',
+      'status' => 'Em andamento',
+      'creator' => 'Магнитошахтинская область',
       'image' => '/assets/magnito.png',
       'source_url' => 'https://www.youtube.com/playlist?list=PLcSk98EARw9WwZ2akwuZL7zBSBNefc6po',
       'source_label' => 'Playlist oficial no YouTube',
       'episodes' => 
       array (
+        0 => 
+        array (
+          'number' => 1,
+          'title' => 'Оплетаи нападают на людей в лесах / Главное управление МЧС России по',
+          'url' => 'https://www.youtube.com/watch?v=TicYEqhyX0c&list=PLcSk98EARw9WwZ2akwuZL7zBSBNefc6po',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/TicYEqhyX0c',
+          'duration' => '',
+          'description' => '',
+        ),
+        1 => 
+        array (
+          'number' => 2,
+          'title' => 'Антиакратическое формирование / Главное управление МЧС России по',
+          'url' => 'https://www.youtube.com/watch?v=enTP7SnX-z8&list=PLcSk98EARw9WwZ2akwuZL7zBSBNefc6po&index=2',
+          'embed_url' => 'https://www.youtube-nocookie.com/embed/enTP7SnX-z8',
+          'duration' => '',
+          'description' => '',
+        ),
+        2 => 
+        array (
+          'number' => 3,
+          'title' => 'Признаки заражения неспехом / Главное управление МЧС России по',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        3 => 
+        array (
+          'number' => 4,
+          'title' => 'Укромщики / Главное управление МЧС России по Магнитошахтинской области',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        4 => 
+        array (
+          'number' => 5,
+          'title' => 'Жердяй / Главное управление МЧС России по Магнитошахтинской области',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        5 => 
+        array (
+          'number' => 6,
+          'title' => 'Лесовики и внешний лес / Главное управление МЧС России по Магнитошахтинской',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        6 => 
+        array (
+          'number' => 7,
+          'title' => 'Ночь Карачуна / Главное управление МЧС России по Магнитошахтинской области',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
+        7 => 
+        array (
+          'number' => 8,
+          'title' => 'Магнитошахтинск 5 октября 1992 года',
+          'url' => '',
+          'embed_url' => '',
+          'duration' => '',
+          'description' => '',
+        ),
       ),
       'original_title' => 'Magnitoshakhtinskaia Oblast',
-      'synopsis' => 'Uma série russa de analog horror ambientada em um assunto federal fictício da Rússia chamado Magnitoshakhtinskaia Oblast. A região é coberta de neve, repleta de ruínas industriais enferrujadas e habitada por criaturas anômalas que desafiam a lógica humana. Os residentes são protegidos pelo Ministério de Situações de Emergência (МЧС) e sua Formação Anti-Acratiana. O diferencial da obra é que o anormal é tratado como parte da vida cotidiana: os monstros não são segredos, mas ameaças gerenciadas abertamente pelo governo, que divulga vídeos de orientação à população.',
-      'story' => 'As criaturas são chamadas de Acratitas e divididas em duas categorias: Fragmat (entidades físicas) e Kefal (entidades mentais ou espirituais). Entre os principais monstros estão: Opletai, um predador do tamanho de um urso com membros extremamente longos e flexíveis que habita florestas e ataca as pernas da vítima, sendo o pescoço seu único ponto fraco; Jirduay, uma criatura humanoide alta e magra com braços e pernas desproporcionalmente longos que entra em pequenas aldeias nas noites de inverno para aquecer seus braços nas chaminés das casas, causando dores de cabeça, tontura e vozes perturbadoras na mente; Ukromshik, uma criatura que espreita em edifícios abandonados e arrasta vítimas para a escuridão com membros longos, sendo que sozinho não há chance de sobrevivência e apenas na companhia de outros a criatura pode recuar; Lesoviki, acratitas do tipo kefal que vivem na Floresta Externa e imitam vozes humanas, não gostando de visitantes indesejados; Nespekh, uma doença parasitária que infecta principalmente mulheres e idosos, drenando gradualmente a vontade e o propósito da vítima até que trabalho, fome e a própria vida se tornem sem sentido, sendo o único tratamento o trabalho repetitivo forçado no Centro Kefal de Linhas; e a Noite de Karachun, que ocorre durante o solstício de inverno entre 21 e 22 de dezembro, quando forças impuras se ativam e a regra do МЧС é não sair de casa em hipótese alguma. As regras de sobrevivência divulgadas incluem: não entrar na Floresta Externa no verão e no final do inverno; não confiar em vozes e não ficar sozinho em lugares desertos por muito tempo; e não sair de casa entre 21 e 22 de dezembro. O estilo visual imita fitas VHS antigas, com distorção de imagem e ruídos estranhos, como choro de criança ou sussurros.',
-      'creator_url' => '',
+      'synopsis' => 'Uma série russa de analog horror ambientada em um assunto federal fictício da Rússia chamado Magnitoshakhtinskaia Oblast. A região é coberta de neve, repleta de ruínas industriais enferrujadas e habitada por criaturas anômalas que desafiam a lógica humana. Os residentes são protegidos pelo Ministério de Situações de Emergência (МЧС) e sua Formação Anti-Acratiana. O diferencial da obra é que o anormal é tratado como parte da vida cotidiana: os monstros não são segredos, mas ameaças gerenciadas abertamente pelo governo, que divulga vídeos de orientação à população',
+      'story' => 'As criaturas são chamadas de Acratitas e divididas em duas categorias: Fragmat (entidades físicas) e Kefal (entidades mentais ou espirituais). Entre os principais monstros estão: Opletai, um predador do tamanho de um urso com membros extremamente longos e flexíveis que habita florestas e ataca as pernas da vítima, sendo o pescoço seu único ponto fraco; Jirduay, uma criatura humanoide alta e magra com braços e pernas desproporcionalmente longos que entra em pequenas aldeias nas noites de inverno para aquecer seus braços nas chaminés das casas, causando dores de cabeça, tontura e vozes perturbadoras na mente; Ukromshik, uma criatura que espreita em edifícios abandonados e arrasta vítimas para a escuridão com membros longos, sendo que sozinho não há chance de sobrevivência e apenas na companhia de outros a criatura pode recuar; Lesoviki, acratitas do tipo kefal que vivem na Floresta Externa e imitam vozes humanas, não gostando de visitantes indesejados; Nespekh, uma doença parasitária que infecta principalmente mulheres e idosos, drenando gradualmente a vontade e o propósito da vítima até que trabalho, fome e a própria vida se tornem sem sentido, sendo o único tratamento o trabalho repetitivo forçado no Centro Kefal de Linhas; e a Noite de Karachun, que ocorre durante o solstício de inverno entre 21 e 22 de dezembro, quando forças impuras se ativam e a regra do МЧС é não sair de casa em hipótese alguma. As regras de sobrevivência divulgadas incluem: não entrar na Floresta Externa no verão e no final do inverno; não confiar em vozes e não ficar sozinho em lugares desertos por muito tempo; e não sair de casa entre 21 e 22 de dezembro. O estilo visual imita fitas VHS antigas, com distorção de imagem e ruídos estranhos, como choro de criança ou sussurros',
+      'creator_url' => 'https://www.youtube.com/@Magnitoshakhtinskaia_oblast',
       'tags' => 
       array (
         0 => '#bcasthijacks',
@@ -5590,7 +6198,7 @@ return array (
       'name' => 'Administrador',
       'nickname' => 'Admin',
       'email' => 'admin@wwanalog.local',
-      'password' => '123456',
+      'password' => '$2y$12$6eCkl5qROtz8LnZ7xZBfZu9CnOJfzZIChVu22LCSMQSudBYUDr1MG',
       'role' => 'Administrador',
     ),
     1 => 
@@ -5598,8 +6206,8 @@ return array (
       'id' => 2,
       'name' => 'Desenvolvedor WWAnalog',
       'nickname' => 'Desenvolvedor',
-      'email' => 'alciiaelizabethpilarflor@gmail.com',
-      'password' => '123456',
+      'email' => 'aliciaelizabethpilarflor@gmail.com',
+      'password' => '$2y$12$n.pZwxh2qtgekW0dCJnD7eEwdqOgJ2B7YvJgF9UZVHkspsb.txp12',
       'role' => 'Administrador',
       'bio' => '',
     ),
@@ -5648,6 +6256,34 @@ return array (
       'work_id' => 3,
       'user_id' => 0,
       'at' => '2026-10-22T12:42:17+00:00',
+    ),
+    2 => 
+    array (
+      'type' => 'episode_list',
+      'work_id' => 1,
+      'user_id' => 0,
+      'at' => '2026-10-29T11:59:43+00:00',
+    ),
+    3 => 
+    array (
+      'type' => 'work',
+      'work_id' => 34,
+      'user_id' => 0,
+      'at' => '2026-10-29T11:59:56+00:00',
+    ),
+    4 => 
+    array (
+      'type' => 'work',
+      'work_id' => 34,
+      'user_id' => 0,
+      'at' => '2026-10-29T12:00:06+00:00',
+    ),
+    5 => 
+    array (
+      'type' => 'work',
+      'work_id' => 1,
+      'user_id' => 0,
+      'at' => '2026-10-29T16:24:51+00:00',
     ),
   ),
 );

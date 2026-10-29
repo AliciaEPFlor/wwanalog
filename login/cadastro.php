@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $senha = $_POST['senha'] ?? '';
     $name = trim($_POST['nome'] ?? '');
     $nick = trim($_POST['apelido'] ?? '');
-    if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL) || strlen($senha) < 8 || $name === '') $err = 'Preencha os campos corretamente. A senha deve ter pelo menos 8 caracteres.';
+    if (!$email || !filter_var($email, FILTER_VALIDATE_EMAIL) || !preg_match('/^[A-Z0-9._%+-]+@gmail\.com$/i', $email) || strlen($senha) < 8 || $name === '') $err = 'Use um endereço @gmail.com válido e uma senha com pelo menos 8 caracteres.';
     elseif (array_filter($d['users'], fn($u) => strtolower($u['email']) === strtolower($email))) $err = 'Este e-mail já está cadastrado.';
     else {
         $u = ['id' => max(array_column($d['users'], 'id') ?: [0]) + 1, 'name' => $name, 'nickname' => $nick, 'email' => $email, 'password' => password_hash($senha, PASSWORD_DEFAULT), 'role' => 'Usuário', 'bio' => '', 'created_at' => date('c')];

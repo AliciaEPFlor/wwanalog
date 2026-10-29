@@ -1578,3 +1578,51 @@ As próximas etapas devem priorizar a migração da autenticação para PostgreS
 **Nota de segurança:** não incluir senhas reais, tokens de API, chaves privadas ou credenciais de banco de dados neste documento ou no repositório público.
 
 **Fim da documentação.**
+
+
+## Atualizações desta versão
+
+- Cadastro público aceita somente endereços válidos `@gmail.com`; senhas novas são armazenadas com `password_hash`.
+- Perfil permite editar nome, apelido, descrição e foto, com pré-visualização antes do envio. Os estados pessoais são `Adicionado à lista`, `Assistindo` e `Assistido`.
+- Painel do desenvolvedor exibe indicadores calculados a partir dos registros disponíveis, rankings de visualizações/comentários, solicitações recebidas e termos agregados dos comentários.
+- O cadastro, comentários, avaliações, listas, visualizações, contatos e ações administrativas são mantidos em `database/data.php` nesta versão de armazenamento local. Para implantação com vários processos/usuários, configure PostgreSQL conforme `database/POSTGRESQL.md`.
+- O arquivo `start.bat` foi removido; utilize as instruções de `COMO-EXECUTAR.txt` ou `README.md`.
+
+### Conta de desenvolvedor inicial
+
+- E-mail: `aliciaelizabethpilarflor@gmail.com`
+- Senha inicial: `aliciaflor`
+
+Altere a senha após o primeiro acesso. A senha está armazenada como hash no arquivo de dados; não a substitua por texto puro.
+
+## Correção de navegação e páginas das obras
+
+- Os cartões do catálogo e os demais atalhos de obras agora abrem a página dinâmica `obra.php?id=...`. Isso corrige os links antigos que apontavam para arquivos dentro de `/analogs/` que não existem nesta distribuição e faziam o servidor retornar à página inicial.
+- As páginas de cada obra exibem sinopse, enredo, criador, canal quando disponível, ano, situação, classificação indicativa e lista resumida de episódios, além de um atalho para a lista completa.
+- As informações de sinopse, enredo, criador, ano, situação, classificação e episódios foram complementadas com o PDF de referência fornecido. Campos que o documento não informa continuam sem ser inventados.
+- Foi adicionada a categoria **EAS Scenarios (Cenários de Alerta de Emergência)** e a obra *Magnitoshakhtinskaia Oblast* foi associada a ela.
+- Para abrir as páginas localmente, inicie o projeto pelo servidor PHP/servidor web configurado e acesse `catalogo.php`; não abra os arquivos PHP diretamente como arquivos locais.
+
+### Botão “Adicionar à lista” e salvamento no perfil
+
+- Nas páginas de cada obra há dois botões: **Ver episódios e assistir** e **Adicionar à lista**.
+- O botão de lista exige que a pessoa esteja autenticada. Para visitantes, ele encaminha para a tela de login.
+- Ao adicionar uma obra, o registro é gravado em `database/data.php`, associado ao ID do usuário e ao ID da obra. Por isso, a lista permanece após sair da conta e entrar novamente, desde que o arquivo de dados seja preservado no servidor.
+- O perfil exibe as obras salvas na seção **Minha lista**. Os estados **Assistindo** e **Assistido** também continuam aparecendo nas respectivas seções do perfil.
+- Faça backup de `database/data.php` antes de substituir arquivos em uma atualização, pois ele contém os dados persistentes da aplicação.
+
+## Atualizações de interface (29/10/2026)
+- As páginas individuais das obras não exibem mais a lista/preview de episódios nem a contagem de episódios no quadro de metadados. O acesso aos episódios permanece no botão **Ver episódios e assistir**.
+- A capa/imagem da obra fica posicionada à direita do conteúdo em telas maiores e adapta-se a telas menores.
+- Os comentários publicados são visíveis mesmo para visitantes não autenticados. Para publicar, é necessário entrar ou criar uma conta; o campo de comentário para visitantes direciona para o login.
+- O painel administrativo inclui filtros por título, categoria, situação e período (7, 30, 90 ou 365 dias). Os filtros de título/categoria/situação afetam a tabela de obras e o período ajusta as métricas de atividade.
+
+## Painel pessoal do membro — atualização desta versão
+
+O perfil contém uma visão geral com indicadores para obras salvas, obras em andamento, obras assistidas, avaliações, comentários e ações registradas. Os cartões levam às seções correspondentes; as contagens são calculadas novamente a partir dos registros atuais quando o perfil é carregado. A lista e as contribuições são filtradas pelo ID do usuário autenticado, não pelo nome exibido.
+
+**Importante sobre a persistência:** nesta versão, as telas públicas, o perfil e o painel administrativo legado leem e gravam `database/data.php`. Os módulos `people/admin/crud.php` e `people/admin/postgres.php` consultam o PostgreSQL separadamente. Esses armazenamentos ainda não são sincronizados automaticamente; portanto, não descreva os cartões legados como consultas SQL ao PostgreSQL até concluir a migração. O painel reflete novas ações assim que elas forem gravadas no armazenamento utilizado pela tela e o perfil for carregado novamente.
+
+### Verificação de código
+
+Os arquivos PHP do projeto foram verificados com `php -l`. A verificação de sintaxe não substitui os testes de integração no servidor com as credenciais reais e o driver `pdo_pgsql` instalados.

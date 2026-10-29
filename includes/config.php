@@ -15,10 +15,10 @@ function database_config(): array
 {
     $defaults = [
         'driver' => 'pgsql',
-        'host' => getenv('WWANALOG_DB_HOST') ?: '192.168.10.11',
+        'host' => getenv('WWANALOG_DB_HOST') ?: 'localhost',
         'port' => getenv('WWANALOG_DB_PORT') ?: '5432',
         'dbname' => getenv('WWANALOG_DB_NAME') ?: 'wwanalog',
-        'user' => getenv('WWANALOG_DB_USER') ?: 'postgres',
+        'user' => getenv('WWANALOG_DB_USER') ?: 'wwanalog_user',
         'password' => '',
         'connect_timeout' => 5,
     ];
