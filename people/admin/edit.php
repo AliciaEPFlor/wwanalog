@@ -1,1 +1,24 @@
-<?php require_once __DIR__.'/../../includes/functions.php';require_admin();$page_title='Editar obra';$active='admin';require __DIR__.'/../../includes/header.php';check_csrf();$d=data_read();$idx=null;foreach($d['works'] as $i=>$x)if((string)$x['id']===(string)($_GET['id']??''))$idx=$i;if($idx===null)exit('Obra não encontrada');if($_SERVER['REQUEST_METHOD']==='POST'){$fields=['title','original_title','description','synopsis','story','creator','creator_url','year','rating','warning','image'];foreach($fields as $f)$d['works'][$idx][$f]=trim($_POST[$f]??'');$d['works'][$idx]['status']=$_POST['status']??'Em andamento';$d['works'][$idx]['category']=$_POST['category']??$d['works'][$idx]['category'];data_write($d);audit_event('obra_editada',$d['works'][$idx]['title']);header('Location: '.url('people/admin/index.php'));exit;}$w=$d['works'][$idx];?><div class="formbox formbox-wide"><h1>Editar obra</h1><form method="post"><input type="hidden" name="csrf" value="<?=csrf()?>"><?php foreach(['title'=>'Título','original_title'=>'Título original','creator'=>'Criador','creator_url'=>'Link do canal','year'=>'Ano','rating'=>'Classificação indicativa','image'=>'Caminho da capa'] as $f=>$label):?><label><?=e($label)?></label><input class="input" name="<?=e($f)?>" value="<?=e($w[$f]??'')?>" <?=$f==='creator_url'?'type="url"':''?>><?php endforeach;?><label>Categoria</label><select class="select" name="category"><?php foreach($d['categories'] as $c):?><option value="<?=e($c['slug'])?>" <?=($w['category']??'')===$c['slug']?'selected':''?>><?=e($c['name'])?></option><?php endforeach;?></select><label>Situação</label><select class="select" name="status"><?php foreach(['Em andamento','Concluída','Cancelada'] as $st):?><option <?=($w['status']??'')===$st?'selected':''?>><?=e($st)?></option><?php endforeach;?></select><?php foreach(['description'=>'Sinopse curta','synopsis'=>'Sinopse completa','story'=>'História da obra','warning'=>'Avisos de conteúdo sensível'] as $f=>$label):?><label><?=e($label)?></label><textarea class="textarea" name="<?=e($f)?>" rows="4"><?=e($w[$f]??'')?></textarea><?php endforeach;?><button class="btn">Salvar alterações</button> <a class="btn ghost" href="<?=e(url('people/admin/index.php'))?>">Cancelar</a></form></div><?php require __DIR__.'/../../includes/footer.php';?>
+<?php require_once __DIR__ . '/../../includes/functions.php';
+require_admin();
+$page_title = 'Editar obra';
+$active = 'admin';
+require __DIR__ . '/../../includes/header.php';
+check_csrf();
+$d = data_read();
+$idx = null;
+foreach ($d['works'] as $i => $x) if ((string)$x['id'] === (string)($_GET['id'] ?? '')) $idx = $i;
+if ($idx === null) exit('Obra não encontrada');
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $fields = ['title', 'original_title', 'description', 'synopsis', 'story', 'creator', 'creator_url', 'year', 'rating', 'warning', 'image'];
+    foreach ($fields as $f) $d['works'][$idx][$f] = trim($_POST[$f] ?? '');
+    $d['works'][$idx]['status'] = $_POST['status'] ?? 'Em andamento';
+    $d['works'][$idx]['category'] = $_POST['category'] ?? $d['works'][$idx]['category'];
+    data_write($d);
+    audit_event('obra_editada', $d['works'][$idx]['title']);
+    header('Location: ' . url('people/admin/index.php'));
+    exit;
+}
+$w = $d['works'][$idx]; ?><div class="formbox formbox-wide">
+    <h1>Editar obra</h1>
+    <form method="post"><input type="hidden" name="csrf" value="<?= csrf() ?>"><?php foreach (['title' => 'Título', 'original_title' => 'Título original', 'creator' => 'Criador', 'creator_url' => 'Link do canal', 'year' => 'Ano', 'rating' => 'Classificação indicativa', 'image' => 'Caminho da capa'] as $f => $label): ?><label><?= e($label) ?></label><input class="input" name="<?= e($f) ?>" value="<?= e($w[$f] ?? '') ?>" <?= $f === 'creator_url' ? 'type="url"' : '' ?>><?php endforeach; ?><label>Categoria</label><select class="select" name="category"><?php foreach ($d['categories'] as $c): ?><option value="<?= e($c['slug']) ?>" <?= ($w['category'] ?? '') === $c['slug'] ? 'selected' : '' ?>><?= e($c['name']) ?></option><?php endforeach; ?></select><label>Situação</label><select class="select" name="status"><?php foreach (['Em andamento', 'Concluída', 'Cancelada'] as $st): ?><option <?= ($w['status'] ?? '') === $st ? 'selected' : '' ?>><?= e($st) ?></option><?php endforeach; ?></select><?php foreach (['description' => 'Sinopse curta', 'synopsis' => 'Sinopse completa', 'story' => 'História da obra', 'warning' => 'Avisos de conteúdo sensível'] as $f => $label): ?><label><?= e($label) ?></label><textarea class="textarea" name="<?= e($f) ?>" rows="4"><?= e($w[$f] ?? '') ?></textarea><?php endforeach; ?><button class="btn">Salvar alterações</button> <a class="btn ghost" href="<?= e(url('people/admin/index.php')) ?>">Cancelar</a></form>
+</div><?php require __DIR__ . '/../../includes/footer.php'; ?>

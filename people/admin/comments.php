@@ -1,1 +1,31 @@
-<?php require_once __DIR__.'/../../includes/functions.php';require_admin();$page_title='Moderação de comentários';$active='admin';require __DIR__.'/../../includes/header.php';check_csrf();$d=data_read();$msg='';if($_SERVER['REQUEST_METHOD']==='POST'){$id=(int)($_POST['comment_id']??0);foreach($d['comments'] as &$c)if((int)($c['id']??0)===$id){$c['status']=$_POST['status']??'published';$msg='Status do comentário atualizado.';break;}unset($c);if($msg){data_write($d);audit_event('moderacao_comentario','Comentário '.$id.' => '.($_POST['status']??''));}$d=data_read();}?><h1>Moderação de comentários</h1><?php if($msg):?><div class="notice success"><?=e($msg)?></div><?php endif;?><?php foreach(array_reverse($d['comments']) as $c):$w=find_work($c['work_id']??0);?><article class="panel" style="margin:12px 0"><div class="eyebrow"><?=e($c['user_name']??'Usuário')?> · <?=e($w['title']??'Obra removida')?> · <?=e($c['status']??'published')?></div><p><?=nl2br(e($c['body']??''))?></p><form method="post"><input type="hidden" name="csrf" value="<?=csrf()?>"><input type="hidden" name="comment_id" value="<?=e($c['id']??0)?>"><select class="select" name="status"><option value="published">Publicado</option><option value="pending">Aguardando análise</option><option value="flagged">Sinalizado</option><option value="removed">Removido</option></select><button class="btn ghost">Atualizar status</button></form></article><?php endforeach;?><?php require __DIR__.'/../../includes/footer.php';?>
+<?php require_once __DIR__ . '/../../includes/functions.php';
+require_admin();
+$page_title = 'Moderação de comentários';
+$active = 'admin';
+require __DIR__ . '/../../includes/header.php';
+check_csrf();
+$d = data_read();
+$msg = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $id = (int)($_POST['comment_id'] ?? 0);
+    foreach ($d['comments'] as &$c) if ((int)($c['id'] ?? 0) === $id) {
+        $c['status'] = $_POST['status'] ?? 'published';
+        $msg = 'Status do comentário atualizado.';
+        break;
+    }
+    unset($c);
+    if ($msg) {
+        data_write($d);
+        audit_event('moderacao_comentario', 'Comentário ' . $id . ' => ' . ($_POST['status'] ?? ''));
+    }
+    $d = data_read();
+} ?><h1>Moderação de comentários</h1><?php if ($msg): ?><div class="notice success"><?= e($msg) ?></div><?php endif; ?><?php foreach (array_reverse($d['comments']) as $c): $w = find_work($c['work_id'] ?? 0); ?><article class="panel" style="margin:12px 0">
+        <div class="eyebrow"><?= e($c['user_name'] ?? 'Usuário') ?> · <?= e($w['title'] ?? 'Obra removida') ?> · <?= e($c['status'] ?? 'published') ?></div>
+        <p><?= nl2br(e($c['body'] ?? '')) ?></p>
+        <form method="post"><input type="hidden" name="csrf" value="<?= csrf() ?>"><input type="hidden" name="comment_id" value="<?= e($c['id'] ?? 0) ?>"><select class="select" name="status">
+                <option value="published">Publicado</option>
+                <option value="pending">Aguardando análise</option>
+                <option value="flagged">Sinalizado</option>
+                <option value="removed">Removido</option>
+            </select><button class="btn ghost">Atualizar status</button></form>
+    </article><?php endforeach; ?><?php require __DIR__ . '/../../includes/footer.php'; ?>

@@ -1,1 +1,79 @@
-<?php require_once __DIR__.'/../../includes/functions.php';require_admin();$page_title='Painel do desenvolvedor';$active='admin';require __DIR__.'/../../includes/header.php';$d=data_read();$published=array_filter($d['comments'],fn($c)=>($c['status']??'published')==='published');$flagged=array_filter($d['comments'],fn($c)=>in_array($c['status']??'published',['flagged','pending','removed'],true));$since=strtotime('-30 days');$activeUsers=[];foreach($d['audit'] as $a)if(strtotime($a['at']??'1970-01-01')>=$since&&($a['user_id']??0)>0)$activeUsers[$a['user_id']]=true;$views=array_filter($d['views'],fn($v)=>strtotime($v['at']??'1970-01-01')>=$since);$counts=[];foreach($d['comments'] as $c)$counts[$c['work_id']??0]=($counts[$c['work_id']??0]??0)+1;?><div class="breadcrumbs">Área restrita / Desenvolvedor</div><div class="section-head"><div><div class="eyebrow">PAINEL RESTRITO</div><h1>Painel do desenvolvedor</h1><small>Métricas calculadas somente a partir dos eventos e registros locais.</small></div><a class="btn" href="new.php">+ Registrar obra</a></div><div class="grid"><div class="card"><h3>Total de ações registradas</h3><strong><?=count($d['audit'])?></strong></div><div class="card"><h3>Usuários ativos (30 dias)</h3><strong><?=count($activeUsers)?></strong></div><div class="card"><h3>Comentários registrados</h3><strong><?=count($d['comments'])?></strong></div><div class="card"><h3>Comentários sinalizados / pendentes</h3><strong><?=count($flagged)?></strong></div><div class="card"><h3>Visualizações registradas</h3><strong><?=count($views)?></strong></div><div class="card"><h3>Conversas de auxílio</h3><strong><?=count($d['chat_logs'])?></strong></div></div><div class="panel" style="margin-top:22px"><h2>Obras — visualizar e editar</h2><div class="table"><table class="table"><tr><th>Título</th><th>Categoria</th><th>Situação</th><th>Visualizações</th><th>Comentários</th><th>Ação</th></tr><?php foreach($d['works'] as $w):$vc=count(array_filter($d['views'],fn($v)=>(int)($v['work_id']??0)===(int)$w['id']));?><tr><td><?=e($w['title'])?></td><td><?=e(category_name($w['category']))?></td><td><?=e($w['status']??'Não cadastrada')?></td><td><?=$vc?></td><td><?=$counts[$w['id']]??0?></td><td><a class="btn ghost" href="edit.php?id=<?=(int)$w['id']?>">Editar</a> <a class="btn ghost" href="<?=e(url('obra.php?id='.(int)$w['id']))?>">Visualizar</a></td></tr><?php endforeach;?></table></div></div><div class="two-col" style="margin-top:22px"><section class="panel"><h2>Ações recentes</h2><?php $recent=array_slice(array_reverse($d['audit']),0,12);if(!$recent):?><p class="empty">Nenhuma ação registrada ainda.</p><?php else:foreach($recent as $a):?><article class="comment"><div class="eyebrow"><?=e($a['at']??'')?> · <?=e($a['action']??'ação')?></div><p><?=e($a['email']??'')?> — <?=e($a['details']??'')?></p></article><?php endforeach;endif;?></section><section class="panel"><h2>Comentários mais comentados por obra</h2><?php arsort($counts);foreach(array_slice($counts,0,10,true) as $wid=>$num):$w=find_work($wid);if($w):?><div class="kv"><b><?=e($w['title'])?></b><span><?=$num?></span></div><?php endif;endforeach;?><p class="small muted">A distribuição é calculada com os comentários armazenados. Não há gráfico temporal nesta versão sem biblioteca de gráficos.</p></section></div><div class="hero-actions"><a class="btn ghost" href="comments.php">Moderar comentários</a><a class="btn ghost" href="episodes.php">Gerenciar episódios</a></div><?php require __DIR__.'/../../includes/footer.php';?>
+<?php require_once __DIR__ . '/../../includes/functions.php';
+require_admin();
+$page_title = 'Painel do desenvolvedor';
+$active = 'admin';
+require __DIR__ . '/../../includes/header.php';
+$d = data_read();
+$published = array_filter($d['comments'], fn($c) => ($c['status'] ?? 'published') === 'published');
+$flagged = array_filter($d['comments'], fn($c) => in_array($c['status'] ?? 'published', ['flagged', 'pending', 'removed'], true));
+$since = strtotime('-30 days');
+$activeUsers = [];
+foreach ($d['audit'] as $a) if (strtotime($a['at'] ?? '1970-01-01') >= $since && ($a['user_id'] ?? 0) > 0) $activeUsers[$a['user_id']] = true;
+$views = array_filter($d['views'], fn($v) => strtotime($v['at'] ?? '1970-01-01') >= $since);
+$counts = [];
+foreach ($d['comments'] as $c) $counts[$c['work_id'] ?? 0] = ($counts[$c['work_id'] ?? 0] ?? 0) + 1; ?><div class="breadcrumbs">Área restrita / Desenvolvedor</div>
+<div class="section-head">
+    <div>
+        <div class="eyebrow">PAINEL RESTRITO</div>
+        <h1>Painel do desenvolvedor</h1><small>Métricas calculadas somente a partir dos eventos e registros locais.</small>
+    </div><a class="btn" href="new.php">+ Registrar obra</a>
+</div>
+<div class="grid">
+    <div class="card">
+        <h3>Total de ações registradas</h3><strong><?= count($d['audit']) ?></strong>
+    </div>
+    <div class="card">
+        <h3>Usuários ativos (30 dias)</h3><strong><?= count($activeUsers) ?></strong>
+    </div>
+    <div class="card">
+        <h3>Comentários registrados</h3><strong><?= count($d['comments']) ?></strong>
+    </div>
+    <div class="card">
+        <h3>Comentários sinalizados / pendentes</h3><strong><?= count($flagged) ?></strong>
+    </div>
+    <div class="card">
+        <h3>Visualizações registradas</h3><strong><?= count($views) ?></strong>
+    </div>
+    <div class="card">
+        <h3>Conversas de auxílio</h3><strong><?= count($d['chat_logs']) ?></strong>
+    </div>
+</div>
+<div class="panel" style="margin-top:22px">
+    <h2>Obras — visualizar e editar</h2>
+    <div class="table">
+        <table class="table">
+            <tr>
+                <th>Título</th>
+                <th>Categoria</th>
+                <th>Situação</th>
+                <th>Visualizações</th>
+                <th>Comentários</th>
+                <th>Ação</th>
+            </tr><?php foreach ($d['works'] as $w): $vc = count(array_filter($d['views'], fn($v) => (int)($v['work_id'] ?? 0) === (int)$w['id'])); ?><tr>
+                    <td><?= e($w['title']) ?></td>
+                    <td><?= e(category_name($w['category'])) ?></td>
+                    <td><?= e($w['status'] ?? 'Não cadastrada') ?></td>
+                    <td><?= $vc ?></td>
+                    <td><?= $counts[$w['id']] ?? 0 ?></td>
+                    <td><a class="btn ghost" href="edit.php?id=<?= (int)$w['id'] ?>">Editar</a> <a class="btn ghost" href="<?= e(url('obra.php?id=' . (int)$w['id'])) ?>">Visualizar</a></td>
+                </tr><?php endforeach; ?>
+        </table>
+    </div>
+</div>
+<div class="two-col" style="margin-top:22px">
+    <section class="panel">
+        <h2>Ações recentes</h2><?php $recent = array_slice(array_reverse($d['audit']), 0, 12);
+                                if (!$recent): ?><p class="empty">Nenhuma ação registrada ainda.</p><?php else: foreach ($recent as $a): ?><article class="comment">
+                    <div class="eyebrow"><?= e($a['at'] ?? '') ?> · <?= e($a['action'] ?? 'ação') ?></div>
+                    <p><?= e($a['email'] ?? '') ?> — <?= e($a['details'] ?? '') ?></p>
+                </article><?php endforeach;
+                                                                                                                                                        endif; ?>
+    </section>
+    <section class="panel">
+        <h2>Comentários mais comentados por obra</h2><?php arsort($counts);
+                                                        foreach (array_slice($counts, 0, 10, true) as $wid => $num): $w = find_work($wid);
+                                                            if ($w): ?><div class="kv"><b><?= e($w['title']) ?></b><span><?= $num ?></span></div><?php endif;
+                                                                                                                                                                                                                            endforeach; ?><p class="small muted">A distribuição é calculada com os comentários armazenados. Não há gráfico temporal nesta versão sem biblioteca de gráficos.</p>
+    </section>
+</div>
+<div class="hero-actions"><a class="btn ghost" href="comments.php">Moderar comentários</a><a class="btn ghost" href="episodes.php">Gerenciar episódios</a></div><?php require __DIR__ . '/../../includes/footer.php'; ?>

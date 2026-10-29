@@ -5621,6 +5621,14 @@ return array (
   ),
   'audit' => 
   array (
+    0 => 
+    array (
+      'at' => '2026-10-29T11:17:27+00:00',
+      'user_id' => 3,
+      'email' => 'alicia.pilar@gmail.com',
+      'action' => 'cadastro',
+      'details' => 'Nova conta criada',
+    ),
   ),
   'chat_logs' => 
   array (
