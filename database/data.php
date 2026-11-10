@@ -6237,6 +6237,46 @@ return array (
       'action' => 'cadastro',
       'details' => 'Nova conta criada',
     ),
+    1 => 
+    array (
+      'at' => '2026-11-03T11:01:53+00:00',
+      'user_id' => 2,
+      'email' => 'aliciaelizabethpilarflor@gmail.com',
+      'action' => 'login',
+      'details' => 'Login realizado',
+    ),
+    2 => 
+    array (
+      'at' => '2026-11-05T14:01:30+00:00',
+      'user_id' => 2,
+      'email' => 'aliciaelizabethpilarflor@gmail.com',
+      'action' => 'login',
+      'details' => 'Login realizado',
+    ),
+    3 => 
+    array (
+      'at' => '2026-11-05T18:08:59+00:00',
+      'user_id' => 3,
+      'email' => 'Vic.lemesnascimento10@gmail.com',
+      'action' => 'cadastro',
+      'details' => 'Nova conta criada',
+    ),
+    4 => 
+    array (
+      'at' => '2026-11-05T19:14:22+00:00',
+      'user_id' => 2,
+      'email' => 'aliciaelizabethpilarflor@gmail.com',
+      'action' => 'login',
+      'details' => 'Login realizado',
+    ),
+    5 => 
+    array (
+      'at' => '2026-11-05T19:26:08+00:00',
+      'user_id' => 2,
+      'email' => 'aliciaelizabethpilarflor@gmail.com',
+      'action' => 'login',
+      'details' => 'Login realizado',
+    ),
   ),
   'chat_logs' => 
   array (
@@ -6284,6 +6324,139 @@ return array (
       'work_id' => 1,
       'user_id' => 0,
       'at' => '2026-10-29T16:24:51+00:00',
+    ),
+    6 => 
+    array (
+      'type' => 'work',
+      'work_id' => 8,
+      'user_id' => 2,
+      'at' => '2026-11-05T18:02:50+00:00',
+    ),
+    7 => 
+    array (
+      'type' => 'work',
+      'work_id' => 8,
+      'user_id' => 0,
+      'at' => '2026-11-05T18:03:25+00:00',
+    ),
+    8 => 
+    array (
+      'type' => 'episode_list',
+      'work_id' => 8,
+      'user_id' => 0,
+      'at' => '2026-11-05T18:03:28+00:00',
+    ),
+    9 => 
+    array (
+      'type' => 'work',
+      'work_id' => 5,
+      'user_id' => 0,
+      'at' => '2026-11-05T18:07:16+00:00',
+    ),
+    10 => 
+    array (
+      'type' => 'work',
+      'work_id' => 5,
+      'user_id' => 0,
+      'at' => '2026-11-05T18:07:45+00:00',
+    ),
+    11 => 
+    array (
+      'type' => 'episode_list',
+      'work_id' => 5,
+      'user_id' => 0,
+      'at' => '2026-11-05T18:07:49+00:00',
+    ),
+    12 => 
+    array (
+      'type' => 'work',
+      'work_id' => 6,
+      'user_id' => 3,
+      'at' => '2026-11-05T18:09:08+00:00',
+    ),
+    13 => 
+    array (
+      'type' => 'episode_list',
+      'work_id' => 6,
+      'user_id' => 3,
+      'at' => '2026-11-05T18:09:11+00:00',
+    ),
+    14 => 
+    array (
+      'type' => 'work',
+      'work_id' => 6,
+      'user_id' => 3,
+      'at' => '2026-11-05T18:13:52+00:00',
+    ),
+    15 => 
+    array (
+      'type' => 'work',
+      'work_id' => 5,
+      'user_id' => 3,
+      'at' => '2026-11-05T18:16:01+00:00',
+    ),
+    16 => 
+    array (
+      'type' => 'episode_list',
+      'work_id' => 5,
+      'user_id' => 3,
+      'at' => '2026-11-05T18:16:18+00:00',
+    ),
+    17 => 
+    array (
+      'type' => 'work',
+      'work_id' => 5,
+      'user_id' => 3,
+      'at' => '2026-11-05T18:53:19+00:00',
+    ),
+    18 => 
+    array (
+      'type' => 'episode_list',
+      'work_id' => 5,
+      'user_id' => 3,
+      'at' => '2026-11-05T18:53:46+00:00',
+    ),
+    19 => 
+    array (
+      'type' => 'work',
+      'work_id' => 5,
+      'user_id' => 0,
+      'at' => '2026-11-05T19:11:29+00:00',
+    ),
+    20 => 
+    array (
+      'type' => 'episode_list',
+      'work_id' => 5,
+      'user_id' => 0,
+      'at' => '2026-11-05T19:11:56+00:00',
+    ),
+    21 => 
+    array (
+      'type' => 'work',
+      'work_id' => 5,
+      'user_id' => 0,
+      'at' => '2026-11-05T19:21:42+00:00',
+    ),
+    22 => 
+    array (
+      'type' => 'episode_list',
+      'work_id' => 5,
+      'user_id' => 0,
+      'at' => '2026-11-05T19:22:19+00:00',
+    ),
+    23 => 
+    array (
+      'type' => 'work',
+      'work_id' => 5,
+      'user_id' => 2,
+      'at' => '2026-11-05T19:40:01+00:00',
+    ),
+    24 => 
+    array (
+      'type' => 'episode_list',
+      'work_id' => 5,
+      'user_id' => 2,
+      'at' => '2026-11-05T19:40:23+00:00',
     ),
   ),
 );
